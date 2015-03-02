@@ -4,7 +4,7 @@ Angular Fx
 
 Conditional animations and effects for your elements, use them like you do for `ng-if` or `ng-hide` or `ng-show`.
 
-It uses the awesome <a href="http://daneden.github.io/animate.css/">animate.css</a>.
+It uses the awesome [animate.css](http://daneden.github.io/animate.css).
 
 The angular fx is developed by [720kb](http://720kb.net).
 
