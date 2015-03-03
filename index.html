@@ -8,151 +8,152 @@
   <title>Angularjs Tooltips</title>
 </head>
 <body class="center-content">
-  <div class="col4 offset-left2">
+  <div class="col4 offset-left2 bg-black" ng-controller="Ctrl">
 
-    <button class="btn btn-large bg-error color-white" ng-bounce="3 > 2">ng-bounce</button>
+      <button class="btn btn-large bg-error color-white" ng-bounce="{{x > 2}}">ng-bounce</button>
+      <div class="separator10"></div>
+<!--
     <div class="separator10"></div>
+    <button class="btn btn-large bg-error color-white" ng-flash="x > 2">             ng-flash</button>
+    <div class="separator10"></div>
+    <button class="btn btn-large bg-error color-white" ng-pulse="x > 2">ng-pulse</button>
+    <div class="separator10"></div>
+    <button class="btn btn-large bg-error color-white" ng-rubber-band="x > 2">ng-rubber-band</button>
+    <div class="separator10"></div>
+    <button class="btn btn-large bg-error color-white" ng-shake="x > 2">ng-shake</button>
+    <div class="separator10"></div>
+    <button class="btn btn-large bg-error color-white" ng-swing="x > 2">ng-swing</button>
+    <div class="separator10"></div>
+    <button class="btn btn-large bg-error color-white" ng-tada="x > 2">ng-tada</button>
+    <div class="separator10"></div>
+    <button class="btn btn-large bg-error color-white" ng-wobble="x > 2">ng-wobble</button>
+    <div class="separator10"></div>
+    <button class="btn btn-large bg-error color-white" ng-bounce-in="x > 2">ng-bounce-in</button>
 
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-flash="3 > 2">             ng-flash</button>
+    <button class="btn btn-large bg-error color-white" ng-bounce-in-down="x > 2">ng-bounce-in-down</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-pulse="3 > 2">ng-pulse</button>
+    <button class="btn btn-large bg-error color-white" ng-bounce-in-left="x > 2">ng-bounce-in-left</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-rubber-band="3 > 2">ng-rubber-band</button>
+    <button class="btn btn-large bg-error color-white" ng-bounce-in-right="x > 2">ng-bounce-in-right</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-shake="3 > 2">ng-shake</button>
+    <button class="btn btn-large bg-error color-white" ng-bounce-in-up="x > 2">ng-bounce-in-up</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-swing="3 > 2">ng-swing</button>
+    <button class="btn btn-large bg-error color-white" ng-bounce-out="x > 2">ng-bounce-out</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-tada="3 > 2">ng-tada</button>
+    <button class="btn btn-large bg-error color-white" ng-bounce-out-down="x > 2">ng-bounce-out-down</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-wobble="3 > 2">ng-wobble</button>
+    <button class="btn btn-large bg-error color-white" ng-bounce-out-left="x > 2">ng-bounce-out-left</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-bounce-in="3 > 2">ng-bounce-in</button>
+    <button class="btn btn-large bg-error color-white" ng-bounce-out-right="x > 2">ng-bounce-out-right</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-bounce-in-down="3 > 2">ng-bounce-in-down</button>
+    <button class="btn btn-large bg-error color-white" ng-bounce-out-up="x > 2">ng-bounce-out-up</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-bounce-in-left="3 > 2">ng-bounce-in-left</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-in="x > 2">ng-fade-in</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-bounce-in-right="3 > 2">ng-bounce-in-right</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-in-down="x > 2">ng-fade-in-down</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-bounce-in-up="3 > 2">ng-bounce-in-up</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-in-down-big="x > 2">ng-fade-in-down-big</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-bounce-out="3 > 2">ng-bounce-out</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-in-left="x > 2">ng-fade-in-left</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-bounce-out-down="3 > 2">ng-bounce-out-down</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-in-left-big="x > 2">ng-fade-in-left-big</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-bounce-out-left="3 > 2">ng-bounce-out-left</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-in-right="x > 2">ng-fade-in-right</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-bounce-out-right="3 > 2">ng-bounce-out-right</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-in-right-big="x > 2">ng-fade-in-right-big</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-bounce-out-up="3 > 2">ng-bounce-out-up</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-in-up="x > 2">ng-fade-in-up</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-in="3 > 2">ng-fade-in</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-in-up-big="x > 2">ng-fade-in-up-big</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-in-down="3 > 2">ng-fade-in-down</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-out="x > 2">ng-fade-out</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-in-down-big="3 > 2">ng-fade-in-down-big</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-out-down="x > 2">ng-fade-out-down</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-in-left="3 > 2">ng-fade-in-left</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-out-down-big="x > 2">ng-fade-out-down-big</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-in-left-big="3 > 2">ng-fade-in-left-big</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-out-left="x > 2">ng-fade-out-left</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-in-right="3 > 2">ng-fade-in-right</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-out-left-big="x > 2">ng-fade-out-left-big</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-in-right-big="3 > 2">ng-fade-in-right-big</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-out-right="x > 2">ng-fade-out-right</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-in-up="3 > 2">ng-fade-in-up</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-out-right-big="x > 2">ng-fade-out-right-big</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-in-up-big="3 > 2">ng-fade-in-up-big</button>
+    <button class="btn btn-large bg-error color-white" ng-fade-out-up="x > 2">ng-fade-outup</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-out="3 > 2">ng-fade-out</button>
-    <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-out-down="3 > 2">ng-fade-out-down</button>
-    <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-out-down-big="3 > 2">ng-fade-out-down-big</button>
-    <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-out-left="3 > 2">ng-fade-out-left</button>
-    <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-out-left-big="3 > 2">ng-fade-out-left-big</button>
-    <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-out-right="3 > 2">ng-fade-out-right</button>
-    <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-out-right-big="3 > 2">ng-fade-out-right-big</button>
-    <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-out-up="3 > 2">ng-fade-outup</button>
-    <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-fade-out-up-big="3 > 2">
+    <button class="btn btn-large bg-error color-white" ng-fade-out-up-big="x > 2">
       ng-fade-out-up-big
     </button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-flip="3 > 2">ng-flip</button>
+    <button class="btn btn-large bg-error color-white" ng-flip="x > 2">ng-flip</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-flip-in-x="3 > 2">ng-flip-in-x</button>
+    <button class="btn btn-large bg-error color-white" ng-flip-in-x="x > 2">ng-flip-in-x</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-flip-in-y="3 > 2">ng-flip-in-y</button>
+    <button class="btn btn-large bg-error color-white" ng-flip-in-y="x > 2">ng-flip-in-y</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-flip-out-x="3 > 2">ng-flip-out-x</button>
+    <button class="btn btn-large bg-error color-white" ng-flip-out-x="x > 2">ng-flip-out-x</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-flip-out-y="3 > 2">ng-flip-out-y</button>
+    <button class="btn btn-large bg-error color-white" ng-flip-out-y="x > 2">ng-flip-out-y</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-light-speed-in="3 > 2">ng-light-speed-in</button>
+    <button class="btn btn-large bg-error color-white" ng-light-speed-in="x > 2">ng-light-speed-in</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-light-speed-out="3 > 2">ng-light-speed-out</button>
+    <button class="btn btn-large bg-error color-white" ng-light-speed-out="x > 2">ng-light-speed-out</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-rotate-in="3 > 2">ng-rotate-in</button>
+    <button class="btn btn-large bg-error color-white" ng-rotate-in="x > 2">ng-rotate-in</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-rotate-in-up-left="3 > 2">ng-rotate-in-up-left</button>
+    <button class="btn btn-large bg-error color-white" ng-rotate-in-up-left="x > 2">ng-rotate-in-up-left</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-rotate-in-up-right="3 > 2">zng-rotate-in-up-right</button>
+    <button class="btn btn-large bg-error color-white" ng-rotate-in-up-right="x > 2">zng-rotate-in-up-right</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-rotate-in-down-left="3 > 2">zng-rotate-in-down-left</button>
+    <button class="btn btn-large bg-error color-white" ng-rotate-in-down-left="x > 2">zng-rotate-in-down-left</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-rotate-in-down-right="3 > 2">ng-rotate-in-down-right</button>
+    <button class="btn btn-large bg-error color-white" ng-rotate-in-down-right="x > 2">ng-rotate-in-down-right</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-rotate-out="3 > 2">ng-rotate-out</button>
+    <button class="btn btn-large bg-error color-white" ng-rotate-out="x > 2">ng-rotate-out</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-rotate-out-up-left="3 > 2">ng-rotate-out-up-left</button>
+    <button class="btn btn-large bg-error color-white" ng-rotate-out-up-left="x > 2">ng-rotate-out-up-left</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-rotate-out-up-right="3 > 2">ng-rotate-out-up-right</button>
+    <button class="btn btn-large bg-error color-white" ng-rotate-out-up-right="x > 2">ng-rotate-out-up-right</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-rotate-out-down-left="3 > 2">ng-rotate-out-down-left</button>
+    <button class="btn btn-large bg-error color-white" ng-rotate-out-down-left="x > 2">ng-rotate-out-down-left</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-rotate-out-down-right="3 > 2">ng-rotate-out-down-right</button>
+    <button class="btn btn-large bg-error color-white" ng-rotate-out-down-right="x > 2">ng-rotate-out-down-right</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-hinge="3 > 2">ng-hinge</button>
+    <button class="btn btn-large bg-error color-white" ng-hinge="x > 2">ng-hinge</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-roll-in="3 > 2">ng-roll-in</button>
+    <button class="btn btn-large bg-error color-white" ng-roll-in="x > 2">ng-roll-in</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-roll-out="3 > 2">ng-roll-out</button>
+    <button class="btn btn-large bg-error color-white" ng-roll-out="x > 2">ng-roll-out</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-zoom-in="3 > 2">ng-zoom-in</button>
+    <button class="btn btn-large bg-error color-white" ng-zoom-in="x > 2">ng-zoom-in</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-zoom-in-down="3 > 2">ng-zoom-in-down</button>
+    <button class="btn btn-large bg-error color-white" ng-zoom-in-down="x > 2">ng-zoom-in-down</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-zoom-in-left="3 > 2">ng-zoom-in-left</button>
+    <button class="btn btn-large bg-error color-white" ng-zoom-in-left="x > 2">ng-zoom-in-left</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-zoom-in-right="3 > 2">ng-zoom-in-right</button>
+    <button class="btn btn-large bg-error color-white" ng-zoom-in-right="x > 2">ng-zoom-in-right</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-zoom-in-up="3 > 2">ng-zoom-in-up</button>
+    <button class="btn btn-large bg-error color-white" ng-zoom-in-up="x > 2">ng-zoom-in-up</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-zoom-out="3 > 2">ng-zoom-out</button>
+    <button class="btn btn-large bg-error color-white" ng-zoom-out="x > 2">ng-zoom-out</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-zoom-out-down="3 > 2">ng-zoom-out-down</button>
+    <button class="btn btn-large bg-error color-white" ng-zoom-out-down="x > 2">ng-zoom-out-down</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-zoom-out-left="3 > 2">ng-zoom-out-left</button>
+    <button class="btn btn-large bg-error color-white" ng-zoom-out-left="x > 2">ng-zoom-out-left</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-zoom-out-right="3 > 2">ng-zoom-out-right</button>
+    <button class="btn btn-large bg-error color-white" ng-zoom-out-right="x > 2">ng-zoom-out-right</button>
     <div class="separator10"></div>
-    <button class="btn btn-large bg-error color-white" ng-zoom-out-up="3 > 2">ng-zoom-out-up</button>
+    <button class="btn btn-large bg-error color-white" ng-zoom-out-up="x > 2">ng-zoom-out-up</button>
     <div class="separator10"></div>
 
+-->
 
-
-  </div>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular-route.min.js"></script>
-  <script type="text/javascript" src="src/js/angular-fx.js"></script>
-  <script type="text/javascript" src="assets/js/index.js"></script>
+</div>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular-route.min.js"></script>
+<script type="text/javascript" src="src/js/angular-fx.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>
