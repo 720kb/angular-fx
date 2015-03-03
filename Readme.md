@@ -144,7 +144,7 @@ ng-fade-out-right
 
 ng-fade-out-right-big
 
-ng-fade-outup
+ng-fade-out-up
 
 ng-fade-out-up-big
 
@@ -216,7 +216,7 @@ ng-zoom-out-up
 ##Options
 
 ####Infinite animations
-If for example you want an element to repeat the animation or effect till your condition/expression is true (sometimes needed), just add the `infinite` class to your element:
+If for example you want an element to repeat the animation or effect while your condition/expression is true (sometimes needed), just add the `infinite` class to your element:
 
 ```html
 <a href="#" ng-pulse="3 > 2">Pulse one time</a>
@@ -224,7 +224,7 @@ If for example you want an element to repeat the animation or effect till your c
 ```
 ##Contributing
 
-We will be much greatful if you help us making this project to grow up.
+We will be much grate if you help us making this project to grow up.
 Feel free to contribute by forking, opening issues, pull requests etc.
 
 ## License
