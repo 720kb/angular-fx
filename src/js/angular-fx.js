@@ -4,15 +4,17 @@
   'use strict';
 
   angular.module('720kb.fx', [])
-  .directive('ngBounce', ['$parse', function ($parse) {
+  .directive('ngBounce', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngBounce': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-bounce-start animated bounce'
           , goFx = function () {
-            if ($parse(atr.ngBounce)()) {
+            if ($scope.$parent.$eval(atr.ngBounce)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -21,7 +23,7 @@
             }
           };
 
-        atr.$observe('ngBounce', function (val) {
+        $scope.$watch('ngBounce', function (val) {
           if (val) {
 
             goFx();
@@ -30,15 +32,17 @@
       }
     };
   }])
-  .directive('ngFlash', ['$parse', function ($parse) {
+  .directive('ngFlash', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFlash': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-flash-start animated flash'
           , goFx = function () {
-            if ($parse(atr.ngFlash)()) {
+            if ($scope.$parent.$eval(atr.ngFlash)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -47,7 +51,7 @@
             }
           };
 
-        atr.$observe('ngFlash', function (val) {
+        $scope.$watch('ngFlash', function (val) {
           if (val) {
 
             goFx();
@@ -56,15 +60,17 @@
       }
     };
   }])
-  .directive('ngPulse', ['$parse', function ($parse) {
+  .directive('ngPulse', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngPulse': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-pulse-start animated pulse'
           , goFx = function () {
-            if ($parse(atr.ngPulse)()) {
+            if ($scope.$parent.$eval(atr.ngPulse)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -73,7 +79,7 @@
             }
           };
 
-        atr.$observe('ngPulse', function (val) {
+        $scope.$watch('ngPulse', function (val) {
           if (val) {
 
             goFx();
@@ -82,15 +88,17 @@
       }
     };
   }])
-  .directive('ngRubberband', ['$parse', function ($parse) {
+  .directive('ngRubberband', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRubberband': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rubberband-start animated rubberBand'
           , goFx = function () {
-            if ($parse(atr.ngRubberband)()) {
+            if ($scope.$parent.$eval(atr.ngRubberband)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -99,7 +107,7 @@
             }
           };
 
-        atr.$observe('ngRubberband', function (val) {
+        $scope.$watch('ngRubberband', function (val) {
           if (val) {
 
             goFx();
@@ -108,15 +116,17 @@
       }
     };
   }])
-  .directive('ngShake', ['$parse', function ($parse) {
+  .directive('ngShake', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngShake': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-shake-start animated shake'
           , goFx = function () {
-            if ($parse(atr.ngShake)()) {
+            if ($scope.$parent.$eval(atr.ngShake)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -125,7 +135,7 @@
             }
           };
 
-        atr.$observe('ngShake', function (val) {
+        $scope.$watch('ngShake', function (val) {
           if (val) {
 
             goFx();
@@ -134,15 +144,17 @@
       }
     };
   }])
-  .directive('ngSwing', ['$parse', function ($parse) {
+  .directive('ngSwing', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngSwing': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-swing-start animated swing'
           , goFx = function () {
-            if ($parse(atr.ngSwing)()) {
+            if ($scope.$parent.$eval(atr.ngSwing)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -151,7 +163,7 @@
             }
           };
 
-        atr.$observe('ngSwing', function (val) {
+        $scope.$watch('ngSwing', function (val) {
           if (val) {
 
             goFx();
@@ -160,15 +172,17 @@
       }
     };
   }])
-  .directive('ngTada', ['$parse', function ($parse) {
+  .directive('ngTada', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngTada': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-tada-start animated tada'
           , goFx = function () {
-            if ($parse(atr.ngTada)()) {
+            if ($scope.$parent.$eval(atr.ngTada)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -177,7 +191,7 @@
             }
           };
 
-        atr.$observe('ngTada', function (val) {
+        $scope.$watch('ngTada', function (val) {
           if (val) {
 
             goFx();
@@ -186,15 +200,17 @@
       }
     };
   }])
-  .directive('ngWobble', ['$parse', function ($parse) {
+  .directive('ngWobble', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngWobble': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-wobble-start animated wobble'
           , goFx = function () {
-            if ($parse(atr.ngWobble)()) {
+            if ($scope.$parent.$eval(atr.ngWobble)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -203,7 +219,7 @@
             }
           };
 
-        atr.$observe('ngWobble', function (val) {
+        $scope.$watch('ngWobble', function (val) {
           if (val) {
 
             goFx();
@@ -212,15 +228,17 @@
       }
     };
   }])
-  .directive('ngBounceIn', ['$parse', function ($parse) {
+  .directive('ngBounceIn', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngBounceIn': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-bouncein-start animated bounceIn'
           , goFx = function () {
-            if ($parse(atr.ngBounceIn)()) {
+            if ($scope.$parent.$eval(atr.ngBounceIn)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -229,7 +247,7 @@
             }
           };
 
-        atr.$observe('ngBounceIn', function (val) {
+        $scope.$watch('ngBounceIn', function (val) {
           if (val) {
 
             goFx();
@@ -238,15 +256,17 @@
       }
     };
   }])
-  .directive('ngBounceInDown', ['$parse', function ($parse) {
+  .directive('ngBounceInDown', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngBounceInDown': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-bounceindown-start animated bounceInDown'
           , goFx = function () {
-            if ($parse(atr.ngBounceInDown)()) {
+            if ($scope.$parent.$eval(atr.ngBounceInDown)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -255,7 +275,7 @@
             }
           };
 
-        atr.$observe('ngBounceInDown', function (val) {
+        $scope.$watch('ngBounceInDown', function (val) {
           if (val) {
 
             goFx();
@@ -264,15 +284,17 @@
       }
     };
   }])
-  .directive('ngBounceInLeft', ['$parse', function ($parse) {
+  .directive('ngBounceInLeft', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngBounceInLeft': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-bounceinleft-start animated bounceInLeft'
           , goFx = function () {
-            if ($parse(atr.ngBounceInLeft)()) {
+            if ($scope.$parent.$eval(atr.ngBounceInLeft)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -281,7 +303,7 @@
             }
           };
 
-        atr.$observe('ngBounceInLeft', function (val) {
+        $scope.$watch('ngBounceInLeft', function (val) {
           if (val) {
 
             goFx();
@@ -290,15 +312,17 @@
       }
     };
   }])
-  .directive('ngBounceInRight', ['$parse', function ($parse) {
+  .directive('ngBounceInRight', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngBounceInRight': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-bounceinright-start animated bounceInRight'
           , goFx = function () {
-            if ($parse(atr.ngBounceInRight)()) {
+            if ($scope.$parent.$eval(atr.ngBounceInRight)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -307,7 +331,7 @@
             }
           };
 
-        atr.$observe('ngBounceInRight', function (val) {
+        $scope.$watch('ngBounceInRight', function (val) {
           if (val) {
 
             goFx();
@@ -316,15 +340,17 @@
       }
     };
   }])
-  .directive('ngBounceInUp', ['$parse', function ($parse) {
+  .directive('ngBounceInUp', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngBounceInUp': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-bounceinup-start animated bounceInUp'
           , goFx = function () {
-            if ($parse(atr.ngBounceInUp)()) {
+            if ($scope.$parent.$eval(atr.ngBounceInUp)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -333,7 +359,7 @@
             }
           };
 
-        atr.$observe('ngBounceInUp', function (val) {
+        $scope.$watch('ngBounceInUp', function (val) {
           if (val) {
 
             goFx();
@@ -342,15 +368,17 @@
       }
     };
   }])
-  .directive('ngBounceOut', ['$parse', function ($parse) {
+  .directive('ngBounceOut', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngBounceOut': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-bounceout-start animated bounceOut'
           , goFx = function () {
-            if ($parse(atr.ngBounceOut)()) {
+            if ($scope.$parent.$eval(atr.ngBounceOut)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -359,7 +387,7 @@
             }
           };
 
-        atr.$observe('ngBounceOut', function (val) {
+        $scope.$watch('ngBounceOut', function (val) {
           if (val) {
 
             goFx();
@@ -368,15 +396,17 @@
       }
     };
   }])
-  .directive('ngBounceOutDown', ['$parse', function ($parse) {
+  .directive('ngBounceOutDown', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngBounceOutDown': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-bounceoutdown-start animated bounceOutDown'
           , goFx = function () {
-            if ($parse(atr.ngBounceOutDown)()) {
+            if ($scope.$parent.$eval(atr.ngBounceOutDown)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -385,7 +415,7 @@
             }
           };
 
-        atr.$observe('ngBounceOutDown', function (val) {
+        $scope.$watch('ngBounceOutDown', function (val) {
           if (val) {
 
             goFx();
@@ -394,15 +424,17 @@
       }
     };
   }])
-  .directive('ngBounceOutLeft', ['$parse', function ($parse) {
+  .directive('ngBounceOutLeft', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngBounceOutLeft': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-bounceoutleft-start animated bounceOutLeft'
           , goFx = function () {
-            if ($parse(atr.ngBounceOutLeft)()) {
+            if ($scope.$parent.$eval(atr.ngBounceOutLeft)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -411,7 +443,7 @@
             }
           };
 
-        atr.$observe('ngBounceOutLeft', function (val) {
+        $scope.$watch('ngBounceOutLeft', function (val) {
           if (val) {
 
             goFx();
@@ -420,15 +452,17 @@
       }
     };
   }])
-  .directive('ngBounceOutRight', ['$parse', function ($parse) {
+  .directive('ngBounceOutRight', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngBounceOutRight': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-bounceoutright-start animated bounceOutRight'
           , goFx = function () {
-            if ($parse(atr.ngBounceOutRight)()) {
+            if ($scope.$parent.$eval(atr.ngBounceOutRight)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -437,7 +471,7 @@
             }
           };
 
-        atr.$observe('ngBounceOutRight', function (val) {
+        $scope.$watch('ngBounceOutRight', function (val) {
           if (val) {
 
             goFx();
@@ -446,15 +480,17 @@
       }
     };
   }])
-  .directive('ngBounceOutUp', ['$parse', function ($parse) {
+  .directive('ngBounceOutUp', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngBounceOutUp': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-bounceoutup-start animated bounceOutUp'
           , goFx = function () {
-            if ($parse(atr.ngBounceOutUp)()) {
+            if ($scope.$parent.$eval(atr.ngBounceOutUp)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -463,7 +499,7 @@
             }
           };
 
-        atr.$observe('ngBounceOutUp', function (val) {
+        $scope.$watch('ngBounceOutUp', function (val) {
           if (val) {
 
             goFx();
@@ -472,15 +508,17 @@
       }
     };
   }])
-  .directive('ngFadeIn', ['$parse', function ($parse) {
+  .directive('ngFadeIn', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeIn': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadein-start animated fadeIn'
           , goFx = function () {
-            if ($parse(atr.ngFadeIn)()) {
+            if ($scope.$parent.$eval(atr.ngFadeIn)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -489,7 +527,7 @@
             }
           };
 
-        atr.$observe('ngFadeIn', function (val) {
+        $scope.$watch('ngFadeIn', function (val) {
           if (val) {
 
             goFx();
@@ -498,15 +536,17 @@
       }
     };
   }])
-  .directive('ngFadeInDown', ['$parse', function ($parse) {
+  .directive('ngFadeInDown', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeInDown': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeindown-start animated fadeInDown'
           , goFx = function () {
-            if ($parse(atr.ngFadeInDown)()) {
+            if ($scope.$parent.$eval(atr.ngFadeInDown)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -515,7 +555,7 @@
             }
           };
 
-        atr.$observe('ngFadeInDown', function (val) {
+        $scope.$watch('ngFadeInDown', function (val) {
           if (val) {
 
             goFx();
@@ -524,15 +564,17 @@
       }
     };
   }])
-  .directive('ngFadeInDownBig', ['$parse', function ($parse) {
+  .directive('ngFadeInDownBig', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeInDownBig': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeindownbig-start animated fadeInDownBig'
           , goFx = function () {
-            if ($parse(atr.ngFadeInDownBig)()) {
+            if ($scope.$parent.$eval(atr.ngFadeInDownBig)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -541,7 +583,7 @@
             }
           };
 
-        atr.$observe('ngFadeInDownBig', function (val) {
+        $scope.$watch('ngFadeInDownBig', function (val) {
           if (val) {
 
             goFx();
@@ -550,15 +592,17 @@
       }
     };
   }])
-  .directive('ngFadeInLeft', ['$parse', function ($parse) {
+  .directive('ngFadeInLeft', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeInLeft': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeinleft-start animated fadeInLeft'
           , goFx = function () {
-            if ($parse(atr.ngFadeInLeft)()) {
+            if ($scope.$parent.$eval(atr.ngFadeInLeft)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -567,7 +611,7 @@
             }
           };
 
-        atr.$observe('ngFadeInLeft', function (val) {
+        $scope.$watch('ngFadeInLeft', function (val) {
           if (val) {
 
             goFx();
@@ -576,15 +620,17 @@
       }
     };
   }])
-  .directive('ngFadeInLeftBig', ['$parse', function ($parse) {
+  .directive('ngFadeInLeftBig', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeInLeftBig': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeinleftbig-start animated fadeInLeftBig'
           , goFx = function () {
-            if ($parse(atr.ngFadeInLeftBig)()) {
+            if ($scope.$parent.$eval(atr.ngFadeInLeftBig)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -593,7 +639,7 @@
             }
           };
 
-        atr.$observe('ngFadeInLeftBig', function (val) {
+        $scope.$watch('ngFadeInLeftBig', function (val) {
           if (val) {
 
             goFx();
@@ -602,15 +648,17 @@
       }
     };
   }])
-  .directive('ngFadeInRight', ['$parse', function ($parse) {
+  .directive('ngFadeInRight', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeInRight': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeinright-start animated fadeInRight'
           , goFx = function () {
-            if ($parse(atr.ngFadeInRight)()) {
+            if ($scope.$parent.$eval(atr.ngFadeInRight)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -619,7 +667,7 @@
             }
           };
 
-        atr.$observe('ngFadeInRight', function (val) {
+        $scope.$watch('ngFadeInRight', function (val) {
           if (val) {
 
             goFx();
@@ -628,15 +676,17 @@
       }
     };
   }])
-  .directive('ngFadeInRightBig', ['$parse', function ($parse) {
+  .directive('ngFadeInRightBig', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeInRightBig': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeinrightbig-start animated fadeInRightBig'
           , goFx = function () {
-            if ($parse(atr.ngFadeInRightBig)()) {
+            if ($scope.$parent.$eval(atr.ngFadeInRightBig)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -645,7 +695,7 @@
             }
           };
 
-        atr.$observe('ngFadeInRightBig', function (val) {
+        $scope.$watch('ngFadeInRightBig', function (val) {
           if (val) {
 
             goFx();
@@ -654,15 +704,17 @@
       }
     };
   }])
-  .directive('ngFadeInUp', ['$parse', function ($parse) {
+  .directive('ngFadeInUp', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeInUp': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeinup-start animated fadeInUp'
           , goFx = function () {
-            if ($parse(atr.ngFadeInUp)()) {
+            if ($scope.$parent.$eval(atr.ngFadeInUp)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -671,7 +723,7 @@
             }
           };
 
-        atr.$observe('ngFadeInUp', function (val) {
+        $scope.$watch('ngFadeInUp', function (val) {
           if (val) {
 
             goFx();
@@ -680,15 +732,17 @@
       }
     };
   }])
-  .directive('ngFadeInUpBig', ['$parse', function ($parse) {
+  .directive('ngFadeInUpBig', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeInUpBig': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeinupbig-start animated fadeInUpBig'
           , goFx = function () {
-            if ($parse(atr.ngFadeInUpBig)()) {
+            if ($scope.$parent.$eval(atr.ngFadeInUpBig)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -697,7 +751,7 @@
             }
           };
 
-        atr.$observe('ngFadeInUpBig', function (val) {
+        $scope.$watch('ngFadeInUpBig', function (val) {
           if (val) {
 
             goFx();
@@ -706,15 +760,17 @@
       }
     };
   }])
-  .directive('ngFadeOut', ['$parse', function ($parse) {
+  .directive('ngFadeOut', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeOut': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeout-start animated fadeOut'
           , goFx = function () {
-            if ($parse(atr.ngFadeOut)()) {
+            if ($scope.$parent.$eval(atr.ngFadeOut)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -723,7 +779,7 @@
             }
           };
 
-        atr.$observe('ngFadeOut', function (val) {
+        $scope.$watch('ngFadeOut', function (val) {
           if (val) {
 
             goFx();
@@ -732,15 +788,17 @@
       }
     };
   }])
-  .directive('ngFadeOutDown', ['$parse', function ($parse) {
+  .directive('ngFadeOutDown', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeOutDown': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeoutdown-start animated fadeOutDown'
           , goFx = function () {
-            if ($parse(atr.ngFadeOutDown)()) {
+            if ($scope.$parent.$eval(atr.ngFadeOutDown)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -749,7 +807,7 @@
             }
           };
 
-        atr.$observe('ngFadeOutDown', function (val) {
+        $scope.$watch('ngFadeOutDown', function (val) {
           if (val) {
 
             goFx();
@@ -758,15 +816,17 @@
       }
     };
   }])
-  .directive('ngFadeOutDownBig', ['$parse', function ($parse) {
+  .directive('ngFadeOutDownBig', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeOutDownBig': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeoutdownbig-start animated fadeOutDownBig'
           , goFx = function () {
-            if ($parse(atr.ngFadeOutDownBig)()) {
+            if ($scope.$parent.$eval(atr.ngFadeOutDownBig)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -775,7 +835,7 @@
             }
           };
 
-        atr.$observe('ngFadeOutDownBig', function (val) {
+        $scope.$watch('ngFadeOutDownBig', function (val) {
           if (val) {
 
             goFx();
@@ -784,15 +844,17 @@
       }
     };
   }])
-  .directive('ngFadeOutLeft', ['$parse', function ($parse) {
+  .directive('ngFadeOutLeft', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeOutLeft': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeoutleft-start animated fadeOutLeft'
           , goFx = function () {
-            if ($parse(atr.ngFadeOutLeft)()) {
+            if ($scope.$parent.$eval(atr.ngFadeOutLeft)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -801,7 +863,7 @@
             }
           };
 
-        atr.$observe('ngFadeOutLeft', function (val) {
+        $scope.$watch('ngFadeOutLeft', function (val) {
           if (val) {
 
             goFx();
@@ -810,15 +872,17 @@
       }
     };
   }])
-  .directive('ngFadeOutLeftBig', ['$parse', function ($parse) {
+  .directive('ngFadeOutLeftBig', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeOutLeftBig': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeoutleftbig-start animated fadeOutLeftBig'
           , goFx = function () {
-            if ($parse(atr.ngFadeOutLeftBig)()) {
+            if ($scope.$parent.$eval(atr.ngFadeOutLeftBig)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -827,7 +891,7 @@
             }
           };
 
-        atr.$observe('ngFadeOutLeftBig', function (val) {
+        $scope.$watch('ngFadeOutLeftBig', function (val) {
           if (val) {
 
             goFx();
@@ -836,15 +900,17 @@
       }
     };
   }])
-  .directive('ngFadeOutRight', ['$parse', function ($parse) {
+  .directive('ngFadeOutRight', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeOutRight': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeoutright-start animated fadeOutRight'
           , goFx = function () {
-            if ($parse(atr.ngFadeOutRight)()) {
+            if ($scope.$parent.$eval(atr.ngFadeOutRight)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -853,7 +919,7 @@
             }
           };
 
-        atr.$observe('ngFadeOutRight', function (val) {
+        $scope.$watch('ngFadeOutRight', function (val) {
           if (val) {
 
             goFx();
@@ -862,15 +928,17 @@
       }
     };
   }])
-  .directive('ngFadeOutRightBig', ['$parse', function ($parse) {
+  .directive('ngFadeOutRightBig', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeOutRightBig': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeoutrightbig-start animated fadeOutRightBig'
           , goFx = function () {
-            if ($parse(atr.ngFadeOutRightBig)()) {
+            if ($scope.$parent.$eval(atr.ngFadeOutRightBig)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -879,7 +947,7 @@
             }
           };
 
-        atr.$observe('ngFadeOutRightBig', function (val) {
+        $scope.$watch('ngFadeOutRightBig', function (val) {
           if (val) {
 
             goFx();
@@ -888,15 +956,17 @@
       }
     };
   }])
-  .directive('ngFadeOutUp', ['$parse', function ($parse) {
+  .directive('ngFadeOutUp', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeOutUp': '='
+      },
       'link': function($scope, el, atr) {
 
-        var clss = 'ng-fadeoutbig-start animated fadeOutBig'
+        var clss = 'ng-fadeoutbig-start animated fadeOutUp'
           , goFx = function () {
-            if ($parse(atr.ngFadeOutUp)()) {
+            if ($scope.$parent.$eval(atr.ngFadeOutUp)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -905,7 +975,7 @@
             }
           };
 
-        atr.$observe('ngFadeOutUp', function (val) {
+        $scope.$watch('ngFadeOutUp', function (val) {
           if (val) {
 
             goFx();
@@ -914,15 +984,17 @@
       }
     };
   }])
-  .directive('ngFadeOutUpBig', ['$parse', function ($parse) {
+  .directive('ngFadeOutUpBig', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFadeOutUpBig': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-fadeoutupbig-start animated fadeOutUpBig'
           , goFx = function () {
-            if ($parse(atr.ngFadeOutUpBig)()) {
+            if ($scope.$parent.$eval(atr.ngFadeOutUpBig)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -931,7 +1003,7 @@
             }
           };
 
-        atr.$observe('ngFadeOutUpBig', function (val) {
+        $scope.$watch('ngFadeOutUpBig', function (val) {
           if (val) {
 
             goFx();
@@ -940,15 +1012,17 @@
       }
     };
   }])
-  .directive('ngFlip', ['$parse', function ($parse) {
+  .directive('ngFlip', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFlip': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-flip-start animated flip'
           , goFx = function () {
-            if ($parse(atr.ngFlip)()) {
+            if ($scope.$parent.$eval(atr.ngFlip)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -957,7 +1031,7 @@
             }
           };
 
-        atr.$observe('ngFlip', function (val) {
+        $scope.$watch('ngFlip', function (val) {
           if (val) {
 
             goFx();
@@ -966,15 +1040,17 @@
       }
     };
   }])
-  .directive('ngFlipInX', ['$parse', function ($parse) {
+  .directive('ngFlipInX', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFlipInX': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-flipinx-start animated flipInX'
           , goFx = function () {
-            if ($parse(atr.ngFlipInX)()) {
+            if ($scope.$parent.$eval(atr.ngFlipInX)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -983,7 +1059,7 @@
             }
           };
 
-        atr.$observe('ngFlipInX', function (val) {
+        $scope.$watch('ngFlipInX', function (val) {
           if (val) {
 
             goFx();
@@ -992,15 +1068,17 @@
       }
     };
   }])
-  .directive('ngFlipInY', ['$parse', function ($parse) {
+  .directive('ngFlipInY', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFlipInY': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-flipiny-start animated flipInY'
           , goFx = function () {
-            if ($parse(atr.ngFlipInY)()) {
+            if ($scope.$parent.$eval(atr.ngFlipInY)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1009,7 +1087,7 @@
             }
           };
 
-        atr.$observe('ngFlipInY', function (val) {
+        $scope.$watch('ngFlipInY', function (val) {
           if (val) {
 
             goFx();
@@ -1018,15 +1096,17 @@
       }
     };
   }])
-  .directive('ngFlipOutX', ['$parse', function ($parse) {
+  .directive('ngFlipOutX', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFlipOutX': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-flipouty-start animated flipOutY'
           , goFx = function () {
-            if ($parse(atr.ngFlipOutX)()) {
+            if ($scope.$parent.$eval(atr.ngFlipOutX)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1035,7 +1115,7 @@
             }
           };
 
-        atr.$observe('ngFlipOutX', function (val) {
+        $scope.$watch('ngFlipOutX', function (val) {
           if (val) {
 
             goFx();
@@ -1044,15 +1124,17 @@
       }
     };
   }])
-  .directive('ngFlipOutY', ['$parse', function ($parse) {
+  .directive('ngFlipOutY', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngFlipOutY': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-flipouty-start animated flipOutY'
           , goFx = function () {
-            if ($parse(atr.ngFlipOutY)()) {
+            if ($scope.$parent.$eval(atr.ngFlipOutY)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1061,7 +1143,7 @@
             }
           };
 
-        atr.$observe('ngFlipOutY', function (val) {
+        $scope.$watch('ngFlipOutY', function (val) {
           if (val) {
 
             goFx();
@@ -1070,15 +1152,17 @@
       }
     };
   }])
-  .directive('ngLightSpeedIn', ['$parse', function ($parse) {
+  .directive('ngLightSpeedIn', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngLightSpeedIn': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-lightspeedin-start animated lightSpeedIn'
           , goFx = function () {
-            if ($parse(atr.ngLightSpeedIn)()) {
+            if ($scope.$parent.$eval(atr.ngLightSpeedIn)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1087,7 +1171,7 @@
             }
           };
 
-        atr.$observe('ngLightSpeedIn', function (val) {
+        $scope.$watch('ngLightSpeedIn', function (val) {
           if (val) {
 
             goFx();
@@ -1096,15 +1180,17 @@
       }
     };
   }])
-  .directive('ngLightSpeedOut', ['$parse', function ($parse) {
+  .directive('ngLightSpeedOut', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngLightSpeedOut': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-lightspeedout-start animated lightSpeedOut'
           , goFx = function () {
-            if ($parse(atr.ngLightSpeedOut)()) {
+            if ($scope.$parent.$eval(atr.ngLightSpeedOut)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1113,7 +1199,7 @@
             }
           };
 
-        atr.$observe('ngLightSpeedOut', function (val) {
+        $scope.$watch('ngLightSpeedOut', function (val) {
           if (val) {
 
             goFx();
@@ -1122,15 +1208,17 @@
       }
     };
   }])
-  .directive('ngRotateIn', ['$parse', function ($parse) {
+  .directive('ngRotateIn', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRotateIn': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rotatein-start animated rotateIn'
           , goFx = function () {
-            if ($parse(atr.ngRotateIn)()) {
+            if ($scope.$parent.$eval(atr.ngRotateIn)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1139,7 +1227,7 @@
             }
           };
 
-        atr.$observe('ngRotateIn', function (val) {
+        $scope.$watch('ngRotateIn', function (val) {
           if (val) {
 
             goFx();
@@ -1148,15 +1236,17 @@
       }
     };
   }])
-  .directive('ngRotateInUpLeft', ['$parse', function ($parse) {
+  .directive('ngRotateInUpLeft', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRotateInUpLeft': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rotateinupleft-start animated rotateInUpLeft'
           , goFx = function () {
-            if ($parse(atr.ngRotateInUpLeft)()) {
+            if ($scope.$parent.$eval(atr.ngRotateInUpLeft)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1165,7 +1255,7 @@
             }
           };
 
-        atr.$observe('ngRotateInUpLeft', function (val) {
+        $scope.$watch('ngRotateInUpLeft', function (val) {
           if (val) {
 
             goFx();
@@ -1174,15 +1264,17 @@
       }
     };
   }])
-  .directive('ngRotateInUpRight', ['$parse', function ($parse) {
+  .directive('ngRotateInUpRight', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRotateInUpRight': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rotateinupright-start animated rotateInUpRight'
           , goFx = function () {
-            if ($parse(atr.ngRotateInUpRight)()) {
+            if ($scope.$parent.$eval(atr.ngRotateInUpRight)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1191,7 +1283,7 @@
             }
           };
 
-        atr.$observe('ngRotateInUpRight', function (val) {
+        $scope.$watch('ngRotateInUpRight', function (val) {
           if (val) {
 
             goFx();
@@ -1200,15 +1292,17 @@
       }
     };
   }])
-  .directive('ngRotateInDownLeft', ['$parse', function ($parse) {
+  .directive('ngRotateInDownLeft', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRotateInDownLeft': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rotateindownleft-start animated rotateInDownLeft'
           , goFx = function () {
-            if ($parse(atr.ngRotateInDownLeft)()) {
+            if ($scope.$parent.$eval(atr.ngRotateInDownLeft)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1217,7 +1311,7 @@
             }
           };
 
-        atr.$observe('ngRotateInDownLeft', function (val) {
+        $scope.$watch('ngRotateInDownLeft', function (val) {
           if (val) {
 
             goFx();
@@ -1226,15 +1320,17 @@
       }
     };
   }])
-  .directive('ngRotateInDownRight', ['$parse', function ($parse) {
+  .directive('ngRotateInDownRight', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRotateInDownRight': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rotateindownright-start animated rotateInDownRight'
           , goFx = function () {
-            if ($parse(atr.ngRotateInDownRight)()) {
+            if ($scope.$parent.$eval(atr.ngRotateInDownRight)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1243,7 +1339,7 @@
             }
           };
 
-        atr.$observe('ngRotateInDownRight', function (val) {
+        $scope.$watch('ngRotateInDownRight', function (val) {
           if (val) {
 
             goFx();
@@ -1252,15 +1348,17 @@
       }
     };
   }])
-  .directive('ngRotateOut', ['$parse', function ($parse) {
+  .directive('ngRotateOut', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRotateOut': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rotateout-start animated rotateOut'
           , goFx = function () {
-            if ($parse(atr.ngRotateOut)()) {
+            if ($scope.$parent.$eval(atr.ngRotateOut)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1269,7 +1367,7 @@
             }
           };
 
-        atr.$observe('ngRotateOut', function (val) {
+        $scope.$watch('ngRotateOut', function (val) {
           if (val) {
 
             goFx();
@@ -1278,15 +1376,17 @@
       }
     };
   }])
-  .directive('ngRotateOutUpLeft', ['$parse', function ($parse) {
+  .directive('ngRotateOutUpLeft', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRotateOutUpLeft': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rotateoutupleft-start animated rotateOutUpLeft'
           , goFx = function () {
-            if ($parse(atr.ngRotateOutUpLeft)()) {
+            if ($scope.$parent.$eval(atr.ngRotateOutUpLeft)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1295,7 +1395,7 @@
             }
           };
 
-        atr.$observe('ngRotateOutUpLeft', function (val) {
+        $scope.$watch('ngRotateOutUpLeft', function (val) {
           if (val) {
 
             goFx();
@@ -1304,15 +1404,17 @@
       }
     };
   }])
-  .directive('ngRotateOutUpRight', ['$parse', function ($parse) {
+  .directive('ngRotateOutUpRight', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRotateOutUpRight': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rotateoutupright-start animated rotateOutUpRight'
           , goFx = function () {
-            if ($parse(atr.ngRotateOutUpRight)()) {
+            if ($scope.$parent.$eval(atr.ngRotateOutUpRight)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1321,7 +1423,7 @@
             }
           };
 
-        atr.$observe('ngRotateOutUpRight', function (val) {
+        $scope.$watch('ngRotateOutUpRight', function (val) {
           if (val) {
 
             goFx();
@@ -1330,15 +1432,17 @@
       }
     };
   }])
-  .directive('ngRotateOutDownLeft', ['$parse', function ($parse) {
+  .directive('ngRotateOutDownLeft', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRotateOutDownLeft': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rotateoutdownleft-start animated rotateOutDownLeft'
           , goFx = function () {
-            if ($parse(atr.ngRotateOutDownLeft)()) {
+            if ($scope.$parent.$eval(atr.ngRotateOutDownLeft)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1347,7 +1451,7 @@
             }
           };
 
-        atr.$observe('ngRotateOutDownLeft', function (val) {
+        $scope.$watch('ngRotateOutDownLeft', function (val) {
           if (val) {
 
             goFx();
@@ -1356,15 +1460,17 @@
       }
     };
   }])
-  .directive('ngRotateOutDownRight', ['$parse', function ($parse) {
+  .directive('ngRotateOutDownRight', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRotateOutDownRight': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rotateoutdownright-start animated rotateOutDownRight'
           , goFx = function () {
-            if ($parse(atr.ngRotateOutDownRight)()) {
+            if ($scope.$parent.$eval(atr.ngRotateOutDownRight)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1373,7 +1479,7 @@
             }
           };
 
-        atr.$observe('ngRotateOutDownRight', function (val) {
+        $scope.$watch('ngRotateOutDownRight', function (val) {
           if (val) {
 
             goFx();
@@ -1382,15 +1488,17 @@
       }
     };
   }])
-  .directive('ngHinge', ['$parse', function ($parse) {
+  .directive('ngHinge', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngHinge': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-hinge-start animated hinge'
           , goFx = function () {
-            if ($parse(atr.ngHinge)()) {
+            if ($scope.$parent.$eval(atr.ngHinge)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1399,7 +1507,7 @@
             }
           };
 
-        atr.$observe('ngHinge', function (val) {
+        $scope.$watch('ngHinge', function (val) {
           if (val) {
 
             goFx();
@@ -1408,15 +1516,17 @@
       }
     };
   }])
-  .directive('ngRollIn', ['$parse', function ($parse) {
+  .directive('ngRollIn', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRollIn': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rollin-start animated rollIn'
           , goFx = function () {
-            if ($parse(atr.ngRollIn)()) {
+            if ($scope.$parent.$eval(atr.ngRollIn)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1425,7 +1535,7 @@
             }
           };
 
-        atr.$observe('ngRollIn', function (val) {
+        $scope.$watch('ngRollIn', function (val) {
           if (val) {
 
             goFx();
@@ -1434,15 +1544,17 @@
       }
     };
   }])
-  .directive('ngRollOut', ['$parse', function ($parse) {
+  .directive('ngRollOut', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngRollOut': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-rollout-start animated rollOut'
           , goFx = function () {
-            if ($parse(atr.ngRollOut)()) {
+            if ($scope.$parent.$eval(atr.ngRollOut)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1451,7 +1563,7 @@
             }
           };
 
-        atr.$observe('ngRollOut', function (val) {
+        $scope.$watch('ngRollOut', function (val) {
           if (val) {
 
             goFx();
@@ -1460,15 +1572,17 @@
       }
     };
   }])
-  .directive('ngZoomIn', ['$parse', function ($parse) {
+  .directive('ngZoomIn', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngZoomIn': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-zoomin-start animated zoomIn'
           , goFx = function () {
-            if ($parse(atr.ngZoomIn)()) {
+            if ($scope.$parent.$eval(atr.ngZoomIn)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1477,7 +1591,7 @@
             }
           };
 
-        atr.$observe('ngZoomIn', function (val) {
+        $scope.$watch('ngZoomIn', function (val) {
           if (val) {
 
             goFx();
@@ -1486,15 +1600,17 @@
       }
     };
   }])
-  .directive('ngZoomInDown', ['$parse', function ($parse) {
+  .directive('ngZoomInDown', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngZoomInDown': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-zoomindown-start animated zoomInDown'
           , goFx = function () {
-            if ($parse(atr.ngZoomInDown)()) {
+            if ($scope.$parent.$eval(atr.ngZoomInDown)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1503,7 +1619,7 @@
             }
           };
 
-        atr.$observe('ngZoomInDown', function (val) {
+        $scope.$watch('ngZoomInDown', function (val) {
           if (val) {
 
             goFx();
@@ -1512,15 +1628,17 @@
       }
     };
   }])
-  .directive('ngZoomInLeft', ['$parse', function ($parse) {
+  .directive('ngZoomInLeft', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngZoomInLeft': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-zoominleft-start animated zoomInLeft'
           , goFx = function () {
-            if ($parse(atr.ngZoomInLeft)()) {
+            if ($scope.$parent.$eval(atr.ngZoomInLeft)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1529,7 +1647,7 @@
             }
           };
 
-        atr.$observe('ngZoomInLeft', function (val) {
+        $scope.$watch('ngZoomInLeft', function (val) {
           if (val) {
 
             goFx();
@@ -1538,15 +1656,17 @@
       }
     };
   }])
-  .directive('ngZoomInRight', ['$parse', function ($parse) {
+  .directive('ngZoomInRight', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngZoomInRight': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-zoominright-start animated zoomInRight'
           , goFx = function () {
-            if ($parse(atr.ngZoomInRight)()) {
+            if ($scope.$parent.$eval(atr.ngZoomInRight)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1555,7 +1675,7 @@
             }
           };
 
-        atr.$observe('ngZoomInRight', function (val) {
+        $scope.$watch('ngZoomInRight', function (val) {
           if (val) {
 
             goFx();
@@ -1564,15 +1684,17 @@
       }
     };
   }])
-  .directive('ngZoomInUp', ['$parse', function ($parse) {
+  .directive('ngZoomInUp', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngZoomInUp': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-zoominup-start animated zoomInUp'
           , goFx = function () {
-            if ($parse(atr.ngZoomInUp)()) {
+            if ($scope.$parent.$eval(atr.ngZoomInUp)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1581,7 +1703,7 @@
             }
           };
 
-        atr.$observe('ngZoomInUp', function (val) {
+        $scope.$watch('ngZoomInUp', function (val) {
           if (val) {
 
             goFx();
@@ -1590,15 +1712,17 @@
       }
     };
   }])
-  .directive('ngZoomOut', ['$parse', function ($parse) {
+  .directive('ngZoomOut', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngZoomOut': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-zoomout-start animated zoomOut'
           , goFx = function () {
-            if ($parse(atr.ngZoomOut)()) {
+            if ($scope.$parent.$eval(atr.ngZoomOut)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1607,7 +1731,7 @@
             }
           };
 
-        atr.$observe('ngZoomOut', function (val) {
+        $scope.$watch('ngZoomOut', function (val) {
           if (val) {
 
             goFx();
@@ -1616,15 +1740,17 @@
       }
     };
   }])
-  .directive('ngZoomOutDown', ['$parse', function ($parse) {
+  .directive('ngZoomOutDown', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngZoomOutDown': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-zoomoutdown-start animated zoomOutDown'
           , goFx = function () {
-            if ($parse(atr.ngZoomOutDown)()) {
+            if ($scope.$parent.$eval(atr.ngZoomOutDown)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1633,7 +1759,7 @@
             }
           };
 
-        atr.$observe('ngZoomOutDown', function (val) {
+        $scope.$watch('ngZoomOutDown', function (val) {
           if (val) {
 
             goFx();
@@ -1642,15 +1768,17 @@
       }
     };
   }])
-  .directive('ngZoomOutLeft', ['$parse', function ($parse) {
+  .directive('ngZoomOutLeft', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngZoomOutLeft': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-zoomoutleft-start animated zoomOutLeft'
           , goFx = function () {
-            if ($parse(atr.ngZoomOutLeft)()) {
+            if ($scope.$parent.$eval(atr.ngZoomOutLeft)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1659,7 +1787,7 @@
             }
           };
 
-        atr.$observe('ngZoomOutLeft', function (val) {
+        $scope.$watch('ngZoomOutLeft', function (val) {
           if (val) {
 
             goFx();
@@ -1668,15 +1796,17 @@
       }
     };
   }])
-  .directive('ngZoomOutRight', ['$parse', function ($parse) {
+  .directive('ngZoomOutRight', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngZoomOutRight': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-zoomoutright-start animated zoomOutRight'
           , goFx = function () {
-            if ($parse(atr.ngZoomOutRight)()) {
+            if ($scope.$parent.$eval(atr.ngZoomOutRight)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1685,7 +1815,7 @@
             }
           };
 
-        atr.$observe('ngZoomOutRight', function (val) {
+        $scope.$watch('ngZoomOutRight', function (val) {
           if (val) {
 
             goFx();
@@ -1694,15 +1824,17 @@
       }
     };
   }])
-  .directive('ngZoomOutUp', ['$parse', function ($parse) {
+  .directive('ngZoomOutUp', [function () {
     return {
       'restrict': 'A',
-      'scope': true,
+      'scope': {
+        'ngZoomOutUp': '='
+      },
       'link': function($scope, el, atr) {
 
         var clss = 'ng-zoomoutup-start animated zoomOutUp'
           , goFx = function () {
-            if ($parse(atr.ngZoomOutUp)()) {
+            if ($scope.$parent.$eval(atr.ngZoomOutUp)) {
 
               el.removeClass('animated');
               el.addClass(clss);
@@ -1711,7 +1843,7 @@
             }
           };
 
-        atr.$observe('ngZoomOutUp', function (val) {
+        $scope.$watch('ngZoomOutUp', function (val) {
           if (val) {
 
             goFx();
