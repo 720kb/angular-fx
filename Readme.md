@@ -13,8 +13,6 @@ The angular fx is developed by [720kb](http://720kb.net).
 
 AngularJS v1.2+
 
-##Screen
-![Angular Fx]()
 
 ###Browser support
 
@@ -75,6 +73,29 @@ Use them like you do for `ng-if` or `ng-show` or `ng-hide`
 <a href="#" ng-pulse="3 > 2">Tooltip me</a>
 
 ```
+## Example
+
+```js
+angular.module('app', [
+  '720kb.fx'
+ ])
+ .controller('myCtrl',['$scope', '$timeout', function ($scope, $timeout) {
+    $timeout(function () {
+
+     $scope.x = 3;
+    });
+ }]);
+```
+
+Use them like you do for `ng-if` or `ng-show` or `ng-hide`
+
+```html
+<div ng-controller="myCtrl">
+<a href="#" ng-pulse="x > 2">Pulse</a>
+<a href="#" ng-fade-out="x > 2">Fadeout</a>
+</div>
+```
+
 ##Complete list
 _for animations and effects examples, you can refer to the animate.css animations list [here](http://daneden.github.io/animate.css/)_
 
@@ -208,11 +229,6 @@ ng-zoom-out-right
 
 ng-zoom-out-up
 
-
-## Example
-
-###[Live demo](https://720kb.github.io/angular-fx)
-
 ##Options
 
 ####Infinite animations
@@ -221,6 +237,19 @@ If for example you want an element to repeat the animation or effect while your 
 ```html
 <a href="#" ng-pulse="3 > 2">Pulse one time</a>
 <a href="#" ng-pulse="3 > 2" class="infinite">Pulse continuously</a>
+```
+####Animation speed
+If for example you need an animation or effect to run with a different speed, (at the moment) you can create specific CSS classes:
+
+```css
+.animated.animated-5s{
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+```
+```html
+<a href="#" ng-pulse="3 > 2">Pulse for 1 second (default)</a>
+<a href="#" ng-pulse="3 > 2" class="animated-5s">Pulse for 5 seconds</a>
 ```
 ##Contributing
 
