@@ -7,9 +7,10 @@
     "Dario Andrei <wouldgo84@gmail.com>"
   ],
   "keywords": [
-    "tooltip",
-    "tooltips",
-    "angularjs"
+    "angularjs",
+    "animations",
+    "effects",
+    "animate"
   ],
   "main": [
     "./dist/angular-fx.min.js",
