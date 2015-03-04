@@ -84,6 +84,11 @@ angular.module('app', [
 
      $scope.x = 3;
     }, 2000);
+
+    $timeout(function () {
+
+     $scope.x = 1;
+    }, 6000);
  }]);
 ```
 

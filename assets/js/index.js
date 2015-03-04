@@ -11,5 +11,11 @@
     $timeout(function () {
       $scope.x = 5;
     }, 2000);
+    $timeout(function () {
+      $scope.x = 1.5;
+    }, 6000);
+    $timeout(function () {
+      $scope.x = 7;
+    }, 12000);
   }]);
 }(angular));
