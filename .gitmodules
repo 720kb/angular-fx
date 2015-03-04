@@ -1,5 +1,6 @@
-path = assets/ext
-url = https://github.com/720kb/angular-fx.git
-[submodule "assets/ext"]
-path = assets/ext
-url = https://github.com/daneden/animate.css.git
+[submodule "assets/ext/angular-fx"]
+	path = assets/ext/angular-fx
+	url = https://github.com/720kb/angular-fx.git
+[submodule "assets/ext/animate.css"]
+	path = assets/ext/animate.css
+	url = https://github.com/daneden/animate.css.git

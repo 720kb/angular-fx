@@ -12,10 +12,10 @@
 
     hljsServiceProvider.setOptions({
       // replace tab with 4 spaces
-      'tabReplace':''
+      'tabReplace': ''
     });
   }])
-  .controller('myCtrl',['$scope', '$interval',
+  .controller('myCtrl', ['$scope', '$interval',
   function ($scope, $interval) {
     $scope.fullList = [
       'ng-bounce-in',
