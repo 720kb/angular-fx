@@ -83,7 +83,7 @@ angular.module('app', [
     $timeout(function () {
 
      $scope.x = 3;
-    });
+    }, 2000);
  }]);
 ```
 
