@@ -4,7 +4,7 @@ Angular Fx
 
 ###Angular.js + animate.css
 
-Conditional animations and effects for your elements like `ng-shake`, `ng-pulse`, `ng-tada`, and [more](https://github.com/720kb/angular-fx#complete-list) ...
+Conditional animations and effects for your elements: `ng-shake`, `ng-pulse`, `ng-tada`, and [more](https://github.com/720kb/angular-fx#complete-list) ...
 
 Just use them like you do for `ng-if` or `ng-hide` or `ng-show`.
 
