@@ -2,7 +2,11 @@ Angular Fx
 ==================
 
 
-Conditional animations and effects for your elements, use them like you do for `ng-if` or `ng-hide` or `ng-show`.
+###Angular.js + animate.css
+
+Conditional animations and effects for your elements like `ng-shake`, `ng-pulse`, `ng-tada`, and [more](https://github.com/720kb/angular-fx#complete-list) ...
+
+Just use them like you do for `ng-if` or `ng-hide` or `ng-show`.
 
 It uses the awesome [animate.css](http://daneden.github.io/animate.css).
 
@@ -11,7 +15,9 @@ The angular fx is developed by [720kb](http://720kb.net).
 ##Requirements
 
 
-AngularJS v1.2+
+[AngularJS](http://angularjs.org) v1.2+
+
+[animate.css](http://daneden.github.io/animate.css) 
 
 
 ###Browser support
