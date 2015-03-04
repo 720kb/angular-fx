@@ -1,0 +1,16 @@
+angular.module('app', [
+  '720kb.fx'
+])
+.controller('myCtrl',['$scope', '$interval',
+ function ($scope, $interval) {
+
+  $interval(function () {
+
+    $scope.x = 3;
+  }, 5000);
+
+  $interval(function () {
+
+    $scope.x = 0;
+  }, 10000);
+}]);

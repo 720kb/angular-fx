@@ -1,0 +1,6 @@
+[submodule "vendor/720kb/angular-fx"]
+	path = vendor/720kb/angular-fx
+	url = git@bitbucket.org:720kb/angular-fx.git
+[submodule "vendor/animate.css"]
+	path = vendor/animate.css
+	url = git@github.com:daneden/animate.css.git

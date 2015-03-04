@@ -1,0 +1,2 @@
+<a href="#" ng-pulse="3 > 2">Pulse one time</a>
+<a href="#" ng-pulse="3 > 2" class="infinite">Pulse continuously</a>

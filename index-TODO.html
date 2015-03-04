@@ -1,0 +1,123 @@
+<!doctype html>
+<html ng-app="720kb">
+<head>
+  <meta name="description" content="Angular conditional animations and effects for your elements, it is angularjs + animate.css, examples: ng-pulse, ng-fadein, ng-fadeout, ng-shake, ng-tada, ng-bounce, ng-wobble">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="//720kb.github.io/csshelper/assets/ext/src/helper.css">
+  <link rel="stylesheet" type="text/css" href="//yastatic.net/highlightjs/8.2/styles/vs.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/awful.css">
+  <link rel="stylesheet" type="text/css" href="vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/720kb/angular-fx/dist/angular-fx.min.css">
+  <title>Angular Fx</title>
+</head>
+<body ng-controller="myCtrl">
+ <div class="separator100"></div>
+ <h1 class="center-content color-blue font-xx-large">Angular <i>Fx</i></h1>
+ <div class="separator10"></div>
+ <h5 class="center-content font-light color-muted">
+   Angular conditional animations and effects</br> for your elements.
+ </h5>
+ <div class="separator30"></div>
+ <div class="line-compress line-max">
+   <div class="line">
+     <div class="color-muted center-content">Just some examples (see full list of directives <a class="link" href="#list" >here</a>)</div>
+     <div class="line">
+      <div class="separator10"></div>
+      <div class="line center-content">
+        <span ng-swing="x > 2" class="infinite">
+          <i class="fa fa-circle color-blue"></i> ng-swing
+        </span>&nbsp;&nbsp;
+        <span ng-pulse="x > 2" class="infinite">
+          <i class="fa fa-circle color-blue"></i> ng-pulse
+        </span>&nbsp;&nbsp;
+        <span ng-bounce="x > 2" class="infinite">
+          <i class="fa fa-circle color-blue"></i> ng-bounce
+        </span>
+      </div>
+      <div class="line">
+       <div class="line">
+         <div class="separator10"></div>
+         <div class="separator15">
+          Javascript
+        </div>
+        <div class="separator10"></div>
+        <code hljs="javascript" include="'codePartials/1'"></code>
+        <div class="separator10"></div>
+        <div class="separator15">
+          Html
+        </div>
+        <div class="separator10"></div>
+        <code hljs="javascript" include="'codePartials/2'"></code>
+      </div>
+    </div>
+
+    <div class="separator30"></div>
+    <h2>Installation</h2>
+    <div class="separator15"></div>
+    <h4>Load</h4>
+    <small class="font-medium font-small color-muted">
+      To use the directive include the Angular Fx javascript and CSS files in your web page and the animate.css file:
+    </small>
+    <div class="separator10"></div>
+    <code hljs="html" include="'codePartials/3'"></code>
+    <div class="separator15"></div>
+    <h4>Configuration</h4>
+    <small class="font-medium font-small color-muted">
+      Add the Angular Fx module dependency
+    </small>
+    <div class="separator10"></div>
+    <code hljs="javascript" include="'codePartials/4'"></code>
+    <div class="separator30"></div>
+    <h2>Options</h2>
+    <div class="separator15"></div>
+    <h4>Infinite animations</h4>
+    <small class=" font-small color-muted">
+      If for example you want an element to repeat the animation or effect while your condition/expression is true (sometimes needed), just add the <b>.infinite</b> class to your element:
+    </small>
+    <div class="separator10"></div>
+    <code hljs="html" include="'codePartials/5'">
+    </code>
+  </div>
+</div>
+<div class="separator30"></div>
+<div id="list">
+  <h2>Complete list</h2>
+  <small class=" font-small color-muted">
+    The list is a full porting of the awesome <a target="_blank" href="//daneden.github.io/animate.css/">animate.css</a> classes (i.e: .bounceIn &rarr; ng-bounce-in="")
+  </small>
+  <div class="separator10"></div>
+  <div class="line">
+    <select>
+      <option ng-repeat="item in fullList" ng-value="{{item}}">{{item}}</option>
+    </select>
+  </div>
+</div>
+</div>
+<!--Github fork me ribbon-->
+<a href="https://github.com/720kb/angular-fx">
+  <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Github Source" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+</a>
+<!--footer-->
+<div class="separator50"></div>
+<div class="hr"></div>
+<div class="separator15"></div>
+<div class="center-content">Brought to you by <a href="//720kb.net">720kb</a></div>
+<div class="separator30"></div>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular-route.min.js"></script>
+<script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script type="text/javascript" src="//pc035860.github.io/angular-highlightjs/angular-highlightjs.min.js"></script>
+<script type="text/javascript" src="vendor/720kb/angular-fx/dist/angular-fx.min.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
+<!--G analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54770488-1', 'auto');
+ ga('send', 'pageview');
+</script>
+</body>
+</body>
+</html>
