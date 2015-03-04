@@ -70,7 +70,7 @@ Use them like you do for `ng-if` or `ng-show` or `ng-hide`
 
 ```html
 
-<a href="#" ng-pulse="3 > 2">Tooltip me</a>
+<a href="#" ng-pulse="3 > 2">Pulse</a>
 
 ```
 ## Example
@@ -91,6 +91,7 @@ angular.module('app', [
     }, 6000);
  }]);
 ```
+###[live example](https://720kb.github.io/angular-fx)
 
 Use them like you do for `ng-if` or `ng-show` or `ng-hide`
 
