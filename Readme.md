@@ -30,18 +30,18 @@ IE    ![mmm](http://i.imgur.com/iAIwqCL.png)
 
 ## Load
 
-To use the directive, include the angular-fx javascript and css files in your web page and the animate.css file:
+To use the directive, include theAngular Fx javascript and css files in your web page and the animate.css file:
 
 ```html
 <!DOCTYPE HTML>
 <html>
 <head>
   <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.1/animate.min.css" rel="stylesheet" type="text/css" />
-  <link href="src/css/angular-fx.css" rel="stylesheet" type="text/css" />
+  <link href="path/to//css/angular-fx.css" rel="stylesheet" type="text/css" />
 </head>
 <body ng-app="app">
   //.....
-  <script src="src/js/angular-fx.js"></script>
+  <script src="path/to/js/angular-fx.js"></script>
 </body>
 </html>
 ```
@@ -243,19 +243,7 @@ If for example you want an element to repeat the animation or effect while your 
 <a href="#" ng-pulse="3 > 2">Pulse one time</a>
 <a href="#" ng-pulse="3 > 2" class="infinite">Pulse continuously</a>
 ```
-####Animation speed
-If for example you need an animation or effect to run with a different speed, (at the moment) you can create specific CSS classes:
 
-```css
-.animated.animated-5s{
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-}
-```
-```html
-<a href="#" ng-pulse="3 > 2">Pulse for 1 second (default)</a>
-<a href="#" ng-pulse="3 > 2" class="animated-5s">Pulse for 5 seconds</a>
-```
 ##Contributing
 
 We will be much grate if you help us making this project to grow up.
