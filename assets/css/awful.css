@@ -41,6 +41,10 @@ a.btn,a.btn:hover{
   opacity:1;
   max-width: 80px;
 }
+/*Utils*/
+.inline-block{
+  display: inline-block;
+}
 /*Extra*/
 code.hljs{
 	border-radius:5px;
