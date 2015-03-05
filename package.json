@@ -4,9 +4,10 @@
   "description": "Angular conditional animations and effects for your elements.",
   "homepage": "http://720kb.github.io/angular-fx",
   "keywords": [
-    "date",
-    "tooltips",
-    "input"
+    "angularjs",
+    "animations",
+    "effects",
+    "animate"
   ],
   "repository": {
     "type": "git",
