@@ -1,13 +1,3 @@
-.animated,.animated.animated-medium{
-  -webkit-animation-duration: 0.65s;
-          animation-duration: 0.65s;
-}.animated.animated-slow{
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}.animated.animated-fast{
-  -webkit-animation-duration: 0.35s;
-          animation-duration: 0.35s;
-}
 [ng-bounce-in],
 [ng-bounce-in-down],
 [ng-bounce-in-left],
@@ -66,5 +56,23 @@
 [ng-zoom-in-left].ng-zoomindown-start,
 [ng-zoom-in-right].ng-zoominright-start,
 [ng-zoom-in-up].ng-zoominup-start{
+  display:inherit;
+}
+/*Speed*/
+[ng-fx-speed=medium].animated{
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s;
+}[ng-fx-speed=slow].animated{
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}[ng-fx-speed=fast].animated{
+  -webkit-animation-duration: 0.35s;
+          animation-duration: 0.35s;
+}
+/*Default hide/show*/
+[ng-fx-default=hide]{
+  display:none;
+}
+[ng-fx-default=show]{
   display:inherit;
 }
