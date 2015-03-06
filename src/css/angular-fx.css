@@ -25,7 +25,8 @@
 [ng-zoom-in-down],
 [ng-zoom-in-left],
 [ng-zoom-in-right],
-[ng-zoom-in-up]{
+[ng-zoom-in-up].
+[ng-fx-default=hide]{
   display:none;
 }
 [ng-bounce-in].ng-bouncein-start,
@@ -55,24 +56,18 @@
 [ng-zoom-in-down].ng-zoomindown-start,
 [ng-zoom-in-left].ng-zoomindown-start,
 [ng-zoom-in-right].ng-zoominright-start,
-[ng-zoom-in-up].ng-zoominup-start{
+[ng-zoom-in-up].ng-zoominup-start,
+[ng-fx-default=show]{
   display:inherit;
 }
 /*Speed*/
-[ng-fx-speed=medium].animated{
-  -webkit-animation-duration: 0.65s;
-          animation-duration: 0.65s;
-}[ng-fx-speed=slow].animated{
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}[ng-fx-speed=fast].animated{
-  -webkit-animation-duration: 0.35s;
-          animation-duration: 0.35s;
-}
-/*Default hide/show*/
-[ng-fx-default=hide]{
-  display:none;
-}
-[ng-fx-default=show]{
-  display:inherit;
+.animated,[ng-fx-speed=medium]{
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+}[ng-fx-speed=slow]{
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+}[ng-fx-speed=fast]{
+  -webkit-animation-duration: .45s;
+          animation-duration: .45s;
 }
