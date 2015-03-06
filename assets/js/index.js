@@ -7,15 +7,18 @@
     'ngRoute',
     '720kb.fx'
   ])
-  .controller('Ctrl', ['$scope', '$timeout', function ($scope, $timeout) {
+  .controller('myCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
     $timeout(function () {
       $scope.x = 5;
-    }, 2000);
+    }, 1000);
     $timeout(function () {
       $scope.x = 1.5;
-    }, 6000);
+    }, 3000);
     $timeout(function () {
       $scope.x = 7;
-    }, 12000);
+    }, 5000);
+    $timeout(function () {
+      $scope.x = 70;
+    }, 9000);
   }]);
 }(angular));
