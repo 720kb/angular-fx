@@ -244,6 +244,23 @@ ng-zoom-out-up
 
 ##Options
 
+####Animations speed
+To set a different animation speed (medium by default) just use the `ng-fx-speed="medium | fast | slow"` (default value, if not specified, is `medium`) attribute:
+
+```html
+<a href="#" ng-pulse="3 > 2" ng-fx-speed="slow">Slow Pulse</a>
+<a href="#" ng-pulse="3 > 2" ng-fx-speed="medium">Medium Pulse</a>
+<a href="#" ng-pulse="3 > 2" ng-fx-speed="fast">Fast Pulse</a>
+```
+
+####Element visibility
+If, for any reason, you would your element to be shown or hidden by default, you can use the `ng-fx-default="hide | show"` attribute:
+
+```html
+<a href="#" ng-pulse="3 > 2" ng-fx-default="show">Shown by default</a>
+<a href="#" ng-pulse="3 > 2" ng-fx-default="hide">Hidden by default</a>
+```
+
 ####Infinite animations
 If for example you want an element to repeat the animation or effect while your condition/expression is true (sometimes needed), just add the `infinite` class to your element:
 
