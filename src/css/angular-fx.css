@@ -25,7 +25,7 @@
 [ng-zoom-in-down],
 [ng-zoom-in-left],
 [ng-zoom-in-right],
-[ng-zoom-in-up].
+[ng-zoom-in-up],
 [ng-fx-default=hide]{
   display:none;
 }
