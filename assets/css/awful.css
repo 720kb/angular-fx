@@ -9,7 +9,6 @@ body {
 }
 select,select:active, select:focus, select:hover{
   background: white;
-  font-weight: bold;
 }
 /*Fonts*/
 .font-fontawesome{

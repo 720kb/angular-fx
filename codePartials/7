@@ -1,0 +1,3 @@
+
+<a ng-pulse="3 > 2" ng-fx-default="show">Shown at start</a>
+<a ng-pulse="3 > 2" ng-fx-default="hide">Hidden at start</a>
