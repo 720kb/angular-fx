@@ -245,7 +245,7 @@ ng-zoom-out-up
 ##Options
 
 ####Animations speed
-To set a different animation speed (medium by default) just use the `ng-fx-speed="medium | fast | slow"` (default value, if not specified, is `medium`) attribute:
+To set a different animation speed just use the `ng-fx-speed="medium | fast | slow"` (default value, if not specified, is `medium`) attribute:
 
 ```html
 <a href="#" ng-pulse="3 > 2" ng-fx-speed="slow">Slow Pulse</a>
