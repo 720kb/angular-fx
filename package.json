@@ -1,7 +1,7 @@
 {
   "name": "angular-fx",
   "version": "0.1.0",
-  "description": "Angular conditional animations and effects for your elements.",
+  "description": "Angular CSS3 animation directives, conditional animations and effects for your elements.",
   "homepage": "http://720kb.github.io/angular-fx",
   "keywords": [
     "angularjs",
