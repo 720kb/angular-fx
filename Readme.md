@@ -10,7 +10,7 @@ Just use them like you do for `ng-if` or `ng-hide` or `ng-show`.
 
 It uses the awesome [animate.css](http://daneden.github.io/animate.css).
 
-The angular fx is developed by [720kb](http://720kb.net).
+The Angular Fx is developed by [720kb](http://720kb.net).
 
 ##Requirements
 
