@@ -36,14 +36,15 @@ IE    ![mmm](http://i.imgur.com/iAIwqCL.png)
 
 ## Load
 
-To use the directive, include theAngular Fx javascript and css files in your web page and the animate.css file:
+To use the directive, include the Angular Fx javascript and css files in your web page and the animate.css file:
 
 ```html
 <!DOCTYPE HTML>
 <html>
 <head>
   <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.1/animate.min.css" rel="stylesheet" type="text/css" />
-  <link href="path/to//css/angular-fx.css" rel="stylesheet" type="text/css" />
+  <!-- angular-fx.css goes after animate.css-->
+  <link href="path/to/css/angular-fx.css" rel="stylesheet" type="text/css" />
 </head>
 <body ng-app="app">
   //.....
