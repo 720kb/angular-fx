@@ -1,4 +1,4 @@
 <div ng-controller="myCtrl">
-  <a ng-pulse="x > 2">ng-pulse</a>
+  <a ngfx-pulse="x > 2">ngfx-pulse</a>
   //etc..
 </div>

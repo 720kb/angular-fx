@@ -1,3 +1,3 @@
-<a ng-pulse="3 > 2" ng-fx-speed="slow">Slow Pulse</a>
-<a ng-pulse="3 > 2" ng-fx-speed="medium">Medium Pulse</a>
-<a ng-pulse="3 > 2" ng-fx-speed="fast">Fast Pulse</a>
+<a ngfx-pulse="3 > 2" ngfx-speed="slow">Slow Pulse</a>
+<a ngfx-pulse="3 > 2" ngfx-speed="medium">Medium Pulse</a>
+<a ngfx-pulse="3 > 2" ngfx-speed="fast">Fast Pulse</a>

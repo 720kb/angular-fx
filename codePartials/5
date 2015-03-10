@@ -1,2 +1,2 @@
-<a ng-pulse="3 > 2">One-time Pulse</a>
-<a ng-pulse="3 > 2" class="infinite">Infinite Pulse</a>
+<a ngfx-pulse="3 > 2">One-time Pulse</a>
+<a ngfx-pulse="3 > 2" class="infinite">Infinite Pulse</a>

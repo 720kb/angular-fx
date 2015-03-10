@@ -1,7 +1,7 @@
 <!doctype html>
 <html ng-app="720kb">
 <head>
-  <meta name="description" content="Angular conditional animations and effects for your elements, it is angularjs + animate.css, examples: ng-pulse, ng-fadein, ng-fadeout, ng-shake, ng-tada, ng-bounce, ng-wobble">
+  <meta name="description" content="Angular conditional animations and effects for your elements, it is angularjs + animate.css, examples: ngfx-pulse, ngfx-fadein, ngfx-fadeout, ngfx-shake, ngfx-tada, ngfx-bounce, ngfx-wobble">
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="//720kb.github.io/csshelper/assets/ext/src/helper.css">
   <link rel="stylesheet" type="text/css" href="//yastatic.net/highlightjs/8.2/styles/vs.min.css">
@@ -24,14 +24,14 @@
      <div class="line">
       <div class="separator10"></div>
       <div class="line center-content">
-        <span ng-swing="x > 2" class="infinite inline-block">
-          <i class="fa fa-circle color-blue"></i> ng-swing
+        <span ngfx-tada="x > 2" class="infinite inline-block">
+          <i class="fa fa-circle color-blue"></i> ngfx-tada
         </span>&nbsp;&nbsp;
-        <span ng-pulse="x > 2" class="infinite inline-block">
-          <i class="fa fa-circle color-blue"></i> ng-pulse
+        <span ngfx-pulse="x > 2" class="infinite inline-block">
+          <i class="fa fa-circle color-blue"></i> ngfx-pulse
         </span>&nbsp;&nbsp;
-        <span ng-bounce="x > 2" class="infinite inline-block">
-          <i class="fa fa-circle color-blue"></i> ng-bounce
+        <span ngfx-bounce="x > 2" class="infinite inline-block">
+          <i class="fa fa-circle color-blue"></i> ngfx-bounce
         </span>
       </div>
       <div class="line">
@@ -73,7 +73,7 @@
     <div class="separator15"></div>
     <h4>Animations speed</h4>
     <small class="font-small color-muted">
-      To set a different animation speed just use the <b>ng-fx-speed="medium | fast | slow"</b> (default value, if not specified, is <b>medium</b>) attribute:
+      To set a different animation speed just use the <b>ngfx-speed="medium | fast | slow"</b> (default value, if not specified, is <b>medium</b>) attribute:
     </small>
     <div class="separator10"></div>
     <code hljs="html" include="'codePartials/6'">
@@ -81,7 +81,7 @@
     <div class="separator15"></div>
     <h4>Element visibility</h4>
     <small class="font-small color-muted">
-      If, for any reason, you would your element to be shown or hidden by default, you can use the <b>ng-fx-default="hide | show"</b> attribute:
+      If, for any reason, you would your element to be shown or hidden by default, you can use the <b>ngfx-default="hide | show"</b> attribute:
     </small>
     <div class="separator10"></div>
     <code hljs="html" include="'codePartials/7'">
@@ -100,7 +100,7 @@
 <div id="list">
   <h2>Complete list</h2>
   <small class=" font-small color-muted">
-    The list is a full porting of the awesome <a target="_blank" href="//daneden.github.io/animate.css/">animate.css</a> classes (i.e: .bounceIn &rarr; ng-bounce-in="")
+    The list is a full porting of the awesome <a target="_blank" href="//daneden.github.io/animate.css/">animate.css</a> classes (i.e: .bounceIn &rarr; ngfx-bounce-in="")
   </small>
   <div class="separator10"></div>
   <div class="line">
