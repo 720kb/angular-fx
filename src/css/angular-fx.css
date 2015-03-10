@@ -26,7 +26,7 @@
 [ngfx-zoom-in-left],
 [ngfx-zoom-in-right],
 [ngfx-zoom-in-up],
-[ngfx-fx-default=hide]{
+[ngfx-default=hide]{
   display:none;
 }
 [ngfx-bounce-in].ngfx-bouncein-start,
@@ -64,10 +64,10 @@
 .animated,[ngfx-speed=medium]{
   -webkit-animation-duration: .75s;
           animation-duration: .75s;
-}[ngfx-fx-speed=slow]{
+}[ngfx-speed=slow]{
   -webkit-animation-duration: 1.25s;
           animation-duration: 1.25s;
-}[ngfx-fx-speed=fast]{
+}[ngfx-speed=fast]{
   -webkit-animation-duration: .45s;
           animation-duration: .45s;
 }
