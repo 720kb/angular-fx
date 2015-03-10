@@ -4,7 +4,7 @@ Angular Fx
 
 ###Angular.js + animate.css
 
-Conditional animations and effects for your elements: `ng-shake`, `ng-pulse`, `ng-tada`, and [more](https://github.com/720kb/angular-fx#complete-list) ...
+Conditional animations and effects for your elements: `ngfx-shake`, `ngfx-pulse`, `ngfx-tada`, and [more](https://github.com/720kb/angular-fx#complete-list) ...
 
 Just use them like you do for `ng-if` or `ng-hide` or `ng-show`.
 
@@ -17,21 +17,21 @@ The Angular Fx is developed by [720kb](http://720kb.net).
 
 [AngularJS](http://angularjs.org) v1.2+
 
-[animate.css](http://daneden.github.io/animate.css) 
+[animate.css](http://daneden.github.io/animate.css)
 
 
 ###Browser support
 
 
-Chrome  ![ok](http://i.imgur.com/CK8qxk1.png)
+Chrome  ![ok](http://i.imgur.com/CK8qxk1.pngfx)
 
-Firefox ![ok](http://i.imgur.com/CK8qxk1.png)
+Firefox ![ok](http://i.imgur.com/CK8qxk1.pngfx)
 
-Safari ![ok](http://i.imgur.com/CK8qxk1.png)
+Safari ![ok](http://i.imgur.com/CK8qxk1.pngfx)
 
-Opera ![ok](http://i.imgur.com/CK8qxk1.png)
+Opera ![ok](http://i.imgur.com/CK8qxk1.pngfx)
 
-IE    ![mmm](http://i.imgur.com/iAIwqCL.png)
+IE    ![mmm](http://i.imgur.com/iAIwqCL.pngfx)
 
 
 ## Load
@@ -46,7 +46,7 @@ To use the directive, include the Angular Fx javascript and css files in your we
   <!-- angular-fx.css goes after animate.css-->
   <link href="path/to/css/angular-fx.css" rel="stylesheet" type="text/css" />
 </head>
-<body ng-app="app">
+<body ngfx-app="app">
   //.....
   <script src="path/to/js/angular-fx.js"></script>
 </body>
@@ -77,7 +77,7 @@ Use them like you do for `ng-if` or `ng-show` or `ng-hide`
 
 ```html
 
-<a href="#" ng-pulse="3 > 2">Pulse</a>
+<a href="#" ngfx-pulse="3 > 2">Pulse</a>
 
 ```
 ## Example
@@ -102,9 +102,9 @@ angular.module('app', [
 Use them like you do for `ng-if` or `ng-show` or `ng-hide`
 
 ```html
-<div ng-controller="myCtrl">
-<a href="#" ng-pulse="x > 2">Pulse</a>
-<a href="#" ng-fade-out="x > 2">Fadeout</a>
+<div ngfx-controller="myCtrl">
+<a href="#" ngfx-pulse="x > 2">Pulse</a>
+<a href="#" ngfx-fade-out="x > 2">Fadeout</a>
 </div>
 ```
 
@@ -113,167 +113,167 @@ Use them like you do for `ng-if` or `ng-show` or `ng-hide`
 ##Complete list
 _for animations and effects examples, you can refer to the animate.css animations list [here](http://daneden.github.io/animate.css/)_
 
-ng-flash
+ngfx-flash
 
-ng-pulse
+ngfx-pulse
 
-ng-rubber-band
+ngfx-rubber-band
 
-ng-shake
+ngfx-shake
 
-ng-swing
+ngfx-swingfx
 
-ng-tada
+ngfx-tada
 
-ng-wobble
+ngfx-wobble
 
-ng-bounce-in
+ngfx-bounce-in
 
-ng-bounce-in-down
+ngfx-bounce-in-down
 
-ng-bounce-in-left
+ngfx-bounce-in-left
 
-ng-bounce-in-right
+ngfx-bounce-in-right
 
-ng-bounce-in-up
+ngfx-bounce-in-up
 
-ng-bounce-out
+ngfx-bounce-out
 
-ng-bounce-out-down
+ngfx-bounce-out-down
 
-ng-bounce-out-left
+ngfx-bounce-out-left
 
-ng-bounce-out-right
+ngfx-bounce-out-right
 
-ng-bounce-out-up
+ngfx-bounce-out-up
 
-ng-fade-in
+ngfx-fade-in
 
-ng-fade-in-down
+ngfx-fade-in-down
 
-ng-fade-in-down-big
+ngfx-fade-in-down-big
 
-ng-fade-in-left
+ngfx-fade-in-left
 
-ng-fade-in-left-big
+ngfx-fade-in-left-big
 
-ng-fade-in-right
+ngfx-fade-in-right
 
-ng-fade-in-right-big
+ngfx-fade-in-right-big
 
-ng-fade-in-up
+ngfx-fade-in-up
 
-ng-fade-in-up-big
+ngfx-fade-in-up-big
 
-ng-fade-out
+ngfx-fade-out
 
-ng-fade-out-down
+ngfx-fade-out-down
 
-ng-fade-out-down-big
+ngfx-fade-out-down-big
 
-ng-fade-out-left
+ngfx-fade-out-left
 
-ng-fade-out-left-big
+ngfx-fade-out-left-big
 
-ng-fade-out-right
+ngfx-fade-out-right
 
-ng-fade-out-right-big
+ngfx-fade-out-right-big
 
-ng-fade-out-up
+ngfx-fade-out-up
 
-ng-fade-out-up-big
+ngfx-fade-out-up-big
 
-ng-flip
+ngfx-flip
 
-ng-flip-in-x
+ngfx-flip-in-x
 
-ng-flip-in-y
+ngfx-flip-in-y
 
-ng-flip-out-x
+ngfx-flip-out-x
 
-ng-flip-out-y
+ngfx-flip-out-y
 
-ng-light-speed-in
+ngfx-light-speed-in
 
-ng-light-speed-out
+ngfx-light-speed-out
 
-ng-rotate-in
+ngfx-rotate-in
 
-ng-rotate-in-up-left
+ngfx-rotate-in-up-left
 
-ng-rotate-in-up-right
+ngfx-rotate-in-up-right
 
-ng-rotate-in-down-left
+ngfx-rotate-in-down-left
 
-ng-rotate-in-down-right
+ngfx-rotate-in-down-right
 
-ng-rotate-out
+ngfx-rotate-out
 
-ng-rotate-out-up-left
+ngfx-rotate-out-up-left
 
-ng-rotate-out-up-right
+ngfx-rotate-out-up-right
 
-ng-rotate-out-down-left
+ngfx-rotate-out-down-left
 
-ng-rotate-out-down-right
+ngfx-rotate-out-down-right
 
-ng-hinge
+ngfx-hingfxe
 
-ng-roll-in
+ngfx-roll-in
 
-ng-roll-out
+ngfx-roll-out
 
-ng-zoom-in
+ngfx-zoom-in
 
-ng-zoom-in-down
+ngfx-zoom-in-down
 
-ng-zoom-in-left
+ngfx-zoom-in-left
 
-ng-zoom-in-right
+ngfx-zoom-in-right
 
-ng-zoom-in-up
+ngfx-zoom-in-up
 
-ng-zoom-out
+ngfx-zoom-out
 
-ng-zoom-out-down
+ngfx-zoom-out-down
 
-ng-zoom-out-left
+ngfx-zoom-out-left
 
-ng-zoom-out-right
+ngfx-zoom-out-right
 
-ng-zoom-out-up
+ngfx-zoom-out-up
 
 ##Options
 
 ####Animations speed
-To set a different animation speed just use the `ng-fx-speed="medium | fast | slow"` attribute (default value, if not specified, is `medium`):
+To set a different animation speed just use the `ngfx-speed="medium | fast | slow"` attribute (default value, if not specified, is `medium`):
 
 ```html
-<a href="#" ng-pulse="3 > 2" ng-fx-speed="slow">Slow Pulse</a>
-<a href="#" ng-pulse="3 > 2" ng-fx-speed="medium">Medium Pulse</a>
-<a href="#" ng-pulse="3 > 2" ng-fx-speed="fast">Fast Pulse</a>
+<a href="#" ngfx-pulse="3 > 2" ngfx-speed="slow">Slow Pulse</a>
+<a href="#" ngfx-pulse="3 > 2" ngfx-speed="medium">Medium Pulse</a>
+<a href="#" ngfx-pulse="3 > 2" ngfx-speed="fast">Fast Pulse</a>
 ```
 
 ####Element visibility
-If, for any reason, you would your element to be shown or hidden by default, you can use the `ng-fx-default="hide | show"` attribute:
+If, for any reason, you would your element to be shown or hidden by default, you can use the `ngfx-default="hide | show"` attribute:
 
 ```html
-<a href="#" ng-pulse="3 > 2" ng-fx-default="show">Shown by default</a>
-<a href="#" ng-pulse="3 > 2" ng-fx-default="hide">Hidden by default</a>
+<a href="#" ngfx-pulse="3 > 2" ngfx-default="show">Shown by default</a>
+<a href="#" ngfx-pulse="3 > 2" ngfx-default="hide">Hidden by default</a>
 ```
 
 ####Infinite animations
 If for example you want an element to repeat the animation or effect while your condition/expression is true (sometimes needed), just add the `infinite` class to your element:
 
 ```html
-<a href="#" ng-pulse="3 > 2">Pulse one time</a>
-<a href="#" ng-pulse="3 > 2" class="infinite">Pulse continuously</a>
+<a href="#" ngfx-pulse="3 > 2">Pulse one time</a>
+<a href="#" ngfx-pulse="3 > 2" class="infinite">Pulse continuously</a>
 ```
 
-##Contributing
+##Contributingfx
 
-We will be much grate if you help us making this project to grow up.
-Feel free to contribute by forking, opening issues, pull requests etc.
+We will be much grate if you help us makingfx this project to grow up.
+Feel free to contribute by forkingfx, openingfx issues, pull requests etc.
 
 ## License
 
@@ -281,7 +281,7 @@ The MIT License (MIT)
 
 Copyright (c) 2014 Filippo Oretti, Dario Andrei
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtainingfx a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, includingfx without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the followingfx conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
