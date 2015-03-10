@@ -121,7 +121,7 @@ ngfx-rubber-band
 
 ngfx-shake
 
-ngfx-swingfx
+ngfx-swing
 
 ngfx-tada
 
@@ -217,7 +217,7 @@ ngfx-rotate-out-down-left
 
 ngfx-rotate-out-down-right
 
-ngfx-hingfxe
+ngfx-hinge
 
 ngfx-roll-in
 

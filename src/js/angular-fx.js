@@ -110,14 +110,14 @@
       }
     };
   }])
-  .directive('ngfxSwingfx', [function () {
+  .directive('ngfxSwing', [function () {
     return {
       'restrict': 'A',
       'link': function (s, e, a) {
 
-        var c = 'ngfx-swingfx-start animated swingfx'
+        var c = 'ngfx-swing-start animated swing'
           , fx = function () {
-            if (s.$eval(a.ngfxSwingfx)) {
+            if (s.$eval(a.ngfxSwing)) {
 
               e.removeClass('animated').addClass(c);
             } else {
@@ -125,7 +125,7 @@
             }
           };
 
-        s.$watch(a.ngfxSwingfx, function () {
+        s.$watch(a.ngfxSwing, function () {
           fx();
         });
       }
@@ -1118,14 +1118,14 @@
       }
     };
   }])
-  .directive('ngfxHingfxe', [function () {
+  .directive('ngfxHinge', [function () {
     return {
       'restrict': 'A',
       'link': function (s, e, a) {
 
-        var c = 'ngfx-hingfxe-start animated hingfxe'
+        var c = 'ngfx-hinge-start animated hinge'
           , fx = function () {
-            if (s.$eval(a.ngfxHingfxe)) {
+            if (s.$eval(a.ngfxHinge)) {
 
               e.removeClass('animated').addClass(c);
             } else {
@@ -1133,7 +1133,7 @@
             }
           };
 
-        s.$watch(a.ngfxHingfxe, function () {
+        s.$watch(a.ngfxHinge, function () {
           fx();
         });
       }
