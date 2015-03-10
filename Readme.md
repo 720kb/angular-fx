@@ -46,7 +46,7 @@ To use the directive, include the Angular Fx javascript and css files in your we
   <!-- angular-fx.css goes after animate.css-->
   <link href="path/to/css/angular-fx.css" rel="stylesheet" type="text/css" />
 </head>
-<body ngfx-app="app">
+<body ng-app="app">
   //.....
   <script src="path/to/js/angular-fx.js"></script>
 </body>
@@ -270,10 +270,10 @@ If for example you want an element to repeat the animation or effect while your 
 <a href="#" ngfx-pulse="3 > 2" class="infinite">Pulse continuously</a>
 ```
 
-##Contributingfx
+##Contributing
 
-We will be much grate if you help us makingfx this project to grow up.
-Feel free to contribute by forkingfx, openingfx issues, pull requests etc.
+We will be much grate if you help us making this project to grow up.
+Feel free to contribute by forking, opening issues, pull requests etc.
 
 ## License
 
@@ -281,7 +281,7 @@ The MIT License (MIT)
 
 Copyright (c) 2014 Filippo Oretti, Dario Andrei
 
-Permission is hereby granted, free of charge, to any person obtainingfx a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, includingfx without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the followingfx conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
