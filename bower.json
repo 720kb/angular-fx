@@ -1,7 +1,8 @@
 {
   "name": "angular-fx",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Angular CSS3 animation directives, conditional animations and effects for your elements.",
+  "license": "MIT",
   "authors": [
     "Filippo Oretti <filippo.oretti@gmail.com",
     "Dario Andrei <wouldgo84@gmail.com>"
@@ -16,7 +17,9 @@
     "./dist/angular-fx.min.js",
     "./dist/angular-fx.min.css"
   ],
-  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^3.2.3"
+  },
   "homepage": "http://720kb.github.io/angular-fx",
   "ignore": [
     "**/.*",

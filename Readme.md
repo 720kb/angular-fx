@@ -42,7 +42,7 @@ To use the directive, include the Angular Fx javascript and css files in your we
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.1/animate.min.css" rel="stylesheet" type="text/css" />
+  <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css" />
   <!-- angular-fx.css goes after animate.css-->
   <link href="path/to/css/angular-fx.css" rel="stylesheet" type="text/css" />
 </head>
@@ -59,6 +59,14 @@ To use the directive, include the Angular Fx javascript and css files in your we
 
 ```
 $ bower install angular-fx --save
+```
+
+_then load the js files in your html_
+
+###Npm installation
+
+```
+$ npm install angular-fx --save
 ```
 
 _then load the js files in your html_

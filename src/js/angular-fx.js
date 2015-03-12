@@ -1,1391 +1,1390 @@
 /*global angular*/
-
-(function withAngfxular(angular) {
+(function withAngularFx(angular) {
   'use strict';
 
   angular.module('720kb.fx', [])
-  .directive('ngfxBounce', [function () {
+  .directive('ngfxBounce', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-bounce-start animated bounce'
-          , fx = function () {
+          , fx = function fxFunction() {
 
-            if (s.$eval(a.ngfxBounce)) {
+            if (scope.$eval(attributes.ngfxBounce)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxBounce, function () {
+        scope.$watch(attributes.ngfxBounce, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlash', [function () {
+  .directive('ngfxFlash', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-flash-start animated flash'
-          , fx = function () {
-            if (s.$eval(a.ngfxFlash)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFlash)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFlash, function () {
+        scope.$watch(attributes.ngfxFlash, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxPulse', [function () {
+  .directive('ngfxPulse', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-pulse-start animated pulse'
-          , fx = function () {
-            if (s.$eval(a.ngfxPulse)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxPulse)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxPulse, function () {
+        scope.$watch(attributes.ngfxPulse, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRubberband', [function () {
+  .directive('ngfxRubberband', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rubberband-start animated rubberBand'
-          , fx = function () {
-            if (s.$eval(a.ngfxRubberband)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRubberband)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRubberband, function () {
+        scope.$watch(attributes.ngfxRubberband, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxShake', [function () {
+  .directive('ngfxShake', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-shake-start animated shake'
-          , fx = function () {
-            if (s.$eval(a.ngfxShake)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxShake)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxShake, function () {
+        scope.$watch(attributes.ngfxShake, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxSwing', [function () {
+  .directive('ngfxSwing', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-swing-start animated swing'
-          , fx = function () {
-            if (s.$eval(a.ngfxSwing)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxSwing)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxSwing, function () {
+        scope.$watch(attributes.ngfxSwing, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxTada', [function () {
+  .directive('ngfxTada', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-tada-start animated tada'
-          , fx = function () {
-            if (s.$eval(a.ngfxTada)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxTada)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxTada, function () {
+        scope.$watch(attributes.ngfxTada, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxWobble', [function () {
+  .directive('ngfxWobble', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-wobble-start animated wobble'
-          , fx = function () {
-            if (s.$eval(a.ngfxWobble)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxWobble)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxWobble, function () {
+        scope.$watch(attributes.ngfxWobble, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceIn', [function () {
+  .directive('ngfxBounceIn', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-bouncein-start animated bounceIn'
-          , fx = function () {
-            if (s.$eval(a.ngfxBounceIn)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxBounceIn)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxBounceIn, function () {
+        scope.$watch(attributes.ngfxBounceIn, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceInDown', [function () {
+  .directive('ngfxBounceInDown', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-bounceindown-start animated bounceInDown'
-          , fx = function () {
-            if (s.$eval(a.ngfxBounceInDown)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxBounceInDown)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxBounceInDown, function () {
+        scope.$watch(attributes.ngfxBounceInDown, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceInLeft', [function () {
+  .directive('ngfxBounceInLeft', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-bounceinleft-start animated bounceInLeft'
-          , fx = function () {
-            if (s.$eval(a.ngfxBounceInLeft)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxBounceInLeft)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxBounceInLeft, function () {
+        scope.$watch(attributes.ngfxBounceInLeft, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceInRight', [function () {
+  .directive('ngfxBounceInRight', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-bounceinright-start animated bounceInRight'
-          , fx = function () {
-            if (s.$eval(a.ngfxBounceInRight)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxBounceInRight)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxBounceInRight, function () {
+        scope.$watch(attributes.ngfxBounceInRight, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceInUp', [function () {
+  .directive('ngfxBounceInUp', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-bounceinup-start animated bounceInUp'
-          , fx = function () {
-            if (s.$eval(a.ngfxBounceInUp)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxBounceInUp)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxBounceInUp, function () {
+        scope.$watch(attributes.ngfxBounceInUp, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceOut', [function () {
+  .directive('ngfxBounceOut', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-bounceout-start animated bounceOut'
-          , fx = function () {
-            if (s.$eval(a.ngfxBounceOut)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxBounceOut)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxBounceOut, function () {
+        scope.$watch(attributes.ngfxBounceOut, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceOutDown', [function () {
+  .directive('ngfxBounceOutDown', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-bounceoutdown-start animated bounceOutDown'
-          , fx = function () {
-            if (s.$eval(a.ngfxBounceOutDown)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxBounceOutDown)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxBounceOutDown, function () {
+        scope.$watch(attributes.ngfxBounceOutDown, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceOutLeft', [function () {
+  .directive('ngfxBounceOutLeft', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-bounceoutleft-start animated bounceOutLeft'
-          , fx = function () {
-            if (s.$eval(a.ngfxBounceOutLeft)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxBounceOutLeft)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxBounceOutLeft, function () {
+        scope.$watch(attributes.ngfxBounceOutLeft, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceOutRight', [function () {
+  .directive('ngfxBounceOutRight', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-bounceoutright-start animated bounceOutRight'
-          , fx = function () {
-            if (s.$eval(a.ngfxBounceOutRight)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxBounceOutRight)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxBounceOutRight, function () {
+        scope.$watch(attributes.ngfxBounceOutRight, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceOutUp', [function () {
+  .directive('ngfxBounceOutUp', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-bounceoutup-start animated bounceOutUp'
-          , fx = function () {
-            if (s.$eval(a.ngfxBounceOutUp)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxBounceOutUp)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxBounceOutUp, function () {
+        scope.$watch(attributes.ngfxBounceOutUp, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeIn', [function () {
+  .directive('ngfxFadeIn', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadein-start animated fadeIn'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeIn)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeIn)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeIn, function () {
+        scope.$watch(attributes.ngfxFadeIn, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInDown', [function () {
+  .directive('ngfxFadeInDown', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeindown-start animated fadeInDown'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeInDown)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeInDown)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeInDown, function () {
+        scope.$watch(attributes.ngfxFadeInDown, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInDownBig', [function () {
+  .directive('ngfxFadeInDownBig', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeindownbig-start animated fadeInDownBig'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeInDownBig)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeInDownBig)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeInDownBig, function () {
+        scope.$watch(attributes.ngfxFadeInDownBig, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInLeft', [function () {
+  .directive('ngfxFadeInLeft', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeinleft-start animated fadeInLeft'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeInLeft)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeInLeft)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeInLeft, function () {
+        scope.$watch(attributes.ngfxFadeInLeft, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInLeftBig', [function () {
+  .directive('ngfxFadeInLeftBig', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeinleftbig-start animated fadeInLeftBig'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeInLeftBig)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeInLeftBig)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeInLeftBig, function () {
+        scope.$watch(attributes.ngfxFadeInLeftBig, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInRight', [function () {
+  .directive('ngfxFadeInRight', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeinright-start animated fadeInRight'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeInRight)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeInRight)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeInRight, function () {
+        scope.$watch(attributes.ngfxFadeInRight, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInRightBig', [function () {
+  .directive('ngfxFadeInRightBig', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeinrightbig-start animated fadeInRightBig'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeInRightBig)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeInRightBig)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeInRightBig, function () {
+        scope.$watch(attributes.ngfxFadeInRightBig, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInUp', [function () {
+  .directive('ngfxFadeInUp', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeinup-start animated fadeInUp'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeInUp)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeInUp)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeInUp, function () {
+        scope.$watch(attributes.ngfxFadeInUp, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInUpBig', [function () {
+  .directive('ngfxFadeInUpBig', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeinupbig-start animated fadeInUpBig'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeInUpBig)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeInUpBig)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeInUpBig, function () {
+        scope.$watch(attributes.ngfxFadeInUpBig, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOut', [function () {
+  .directive('ngfxFadeOut', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeout-start animated fadeOut'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeOut)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeOut)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeOut, function () {
+        scope.$watch(attributes.ngfxFadeOut, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutDown', [function () {
+  .directive('ngfxFadeOutDown', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeoutdown-start animated fadeOutDown'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeOutDown)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeOutDown)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeOutDown, function () {
+        scope.$watch(attributes.ngfxFadeOutDown, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutDownBig', [function () {
+  .directive('ngfxFadeOutDownBig', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeoutdownbig-start animated fadeOutDownBig'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeOutDownBig)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeOutDownBig)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeOutDownBig, function () {
+        scope.$watch(attributes.ngfxFadeOutDownBig, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutLeft', [function () {
+  .directive('ngfxFadeOutLeft', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeoutleft-start animated fadeOutLeft'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeOutLeft)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeOutLeft)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeOutLeft, function () {
+        scope.$watch(attributes.ngfxFadeOutLeft, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutLeftBig', [function () {
+  .directive('ngfxFadeOutLeftBig', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeoutleftbig-start animated fadeOutLeftBig'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeOutLeftBig)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeOutLeftBig)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeOutLeftBig, function () {
+        scope.$watch(attributes.ngfxFadeOutLeftBig, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutRight', [function () {
+  .directive('ngfxFadeOutRight', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeoutright-start animated fadeOutRight'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeOutRight)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeOutRight)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeOutRight, function () {
+        scope.$watch(attributes.ngfxFadeOutRight, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutRightBig', [function () {
+  .directive('ngfxFadeOutRightBig', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeoutrightbig-start animated fadeOutRightBig'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeOutRightBig)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeOutRightBig)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeOutRightBig, function () {
+        scope.$watch(attributes.ngfxFadeOutRightBig, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutUp', [function () {
+  .directive('ngfxFadeOutUp', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeoutbig-start animated fadeOutUp'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeOutUp)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeOutUp)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeOutUp, function () {
+        scope.$watch(attributes.ngfxFadeOutUp, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutUpBig', [function () {
+  .directive('ngfxFadeOutUpBig', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-fadeoutupbig-start animated fadeOutUpBig'
-          , fx = function () {
-            if (s.$eval(a.ngfxFadeOutUpBig)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFadeOutUpBig)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFadeOutUpBig, function () {
+        scope.$watch(attributes.ngfxFadeOutUpBig, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlip', [function () {
+  .directive('ngfxFlip', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-flip-start animated flip'
-          , fx = function () {
-            if (s.$eval(a.ngfxFlip)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFlip)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFlip, function () {
+        scope.$watch(attributes.ngfxFlip, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlipInX', [function () {
+  .directive('ngfxFlipInX', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-flipinx-start animated flipInX'
-          , fx = function () {
-            if (s.$eval(a.ngfxFlipInX)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFlipInX)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFlipInX, function () {
+        scope.$watch(attributes.ngfxFlipInX, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlipInY', [function () {
+  .directive('ngfxFlipInY', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-flipiny-start animated flipInY'
-          , fx = function () {
-            if (s.$eval(a.ngfxFlipInY)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFlipInY)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFlipInY, function () {
+        scope.$watch(attributes.ngfxFlipInY, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlipOutX', [function () {
+  .directive('ngfxFlipOutX', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-flipouty-start animated flipOutY'
-          , fx = function () {
-            if (s.$eval(a.ngfxFlipOutX)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFlipOutX)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFlipOutX, function () {
+        scope.$watch(attributes.ngfxFlipOutX, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlipOutY', [function () {
+  .directive('ngfxFlipOutY', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-flipouty-start animated flipOutY'
-          , fx = function () {
-            if (s.$eval(a.ngfxFlipOutY)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxFlipOutY)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxFlipOutY, function () {
+        scope.$watch(attributes.ngfxFlipOutY, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxLightSpeedIn', [function () {
+  .directive('ngfxLightSpeedIn', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-lightspeedin-start animated lightSpeedIn'
-          , fx = function () {
-            if (s.$eval(a.ngfxLightSpeedIn)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxLightSpeedIn)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxLightSpeedIn, function () {
+        scope.$watch(attributes.ngfxLightSpeedIn, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxLightSpeedOut', [function () {
+  .directive('ngfxLightSpeedOut', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-lightspeedout-start animated lightSpeedOut'
-          , fx = function () {
-            if (s.$eval(a.ngfxLightSpeedOut)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxLightSpeedOut)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxLightSpeedOut, function () {
+        scope.$watch(attributes.ngfxLightSpeedOut, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateIn', [function () {
+  .directive('ngfxRotateIn', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rotatein-start animated rotateIn'
-          , fx = function () {
-            if (s.$eval(a.ngfxRotateIn)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRotateIn)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRotateIn, function () {
+        scope.$watch(attributes.ngfxRotateIn, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateInUpLeft', [function () {
+  .directive('ngfxRotateInUpLeft', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rotateinupleft-start animated rotateInUpLeft'
-          , fx = function () {
-            if (s.$eval(a.ngfxRotateInUpLeft)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRotateInUpLeft)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRotateInUpLeft, function () {
+        scope.$watch(attributes.ngfxRotateInUpLeft, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateInUpRight', [function () {
+  .directive('ngfxRotateInUpRight', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rotateinupright-start animated rotateInUpRight'
-          , fx = function () {
-            if (s.$eval(a.ngfxRotateInUpRight)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRotateInUpRight)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRotateInUpRight, function () {
+        scope.$watch(attributes.ngfxRotateInUpRight, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateInDownLeft', [function () {
+  .directive('ngfxRotateInDownLeft', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rotateindownleft-start animated rotateInDownLeft'
-          , fx = function () {
-            if (s.$eval(a.ngfxRotateInDownLeft)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRotateInDownLeft)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRotateInDownLeft, function () {
+        scope.$watch(attributes.ngfxRotateInDownLeft, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateInDownRight', [function () {
+  .directive('ngfxRotateInDownRight', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rotateindownright-start animated rotateInDownRight'
-          , fx = function () {
-            if (s.$eval(a.ngfxRotateInDownRight)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRotateInDownRight)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRotateInDownRight, function () {
+        scope.$watch(attributes.ngfxRotateInDownRight, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateOut', [function () {
+  .directive('ngfxRotateOut', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rotateout-start animated rotateOut'
-          , fx = function () {
-            if (s.$eval(a.ngfxRotateOut)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRotateOut)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRotateOut, function () {
+        scope.$watch(attributes.ngfxRotateOut, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateOutUpLeft', [function () {
+  .directive('ngfxRotateOutUpLeft', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rotateoutupleft-start animated rotateOutUpLeft'
-          , fx = function () {
-            if (s.$eval(a.ngfxRotateOutUpLeft)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRotateOutUpLeft)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRotateOutUpLeft, function () {
+        scope.$watch(attributes.ngfxRotateOutUpLeft, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateOutUpRight', [function () {
+  .directive('ngfxRotateOutUpRight', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rotateoutupright-start animated rotateOutUpRight'
-          , fx = function () {
-            if (s.$eval(a.ngfxRotateOutUpRight)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRotateOutUpRight)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRotateOutUpRight, function () {
+        scope.$watch(attributes.ngfxRotateOutUpRight, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateOutDownLeft', [function () {
+  .directive('ngfxRotateOutDownLeft', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rotateoutdownleft-start animated rotateOutDownLeft'
-          , fx = function () {
-            if (s.$eval(a.ngfxRotateOutDownLeft)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRotateOutDownLeft)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRotateOutDownLeft, function () {
+        scope.$watch(attributes.ngfxRotateOutDownLeft, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateOutDownRight', [function () {
+  .directive('ngfxRotateOutDownRight', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rotateoutdownright-start animated rotateOutDownRight'
-          , fx = function () {
-            if (s.$eval(a.ngfxRotateOutDownRight)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRotateOutDownRight)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRotateOutDownRight, function () {
+        scope.$watch(attributes.ngfxRotateOutDownRight, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxHinge', [function () {
+  .directive('ngfxHinge', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-hinge-start animated hinge'
-          , fx = function () {
-            if (s.$eval(a.ngfxHinge)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxHinge)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxHinge, function () {
+        scope.$watch(attributes.ngfxHinge, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRollIn', [function () {
+  .directive('ngfxRollIn', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rollin-start animated rollIn'
-          , fx = function () {
-            if (s.$eval(a.ngfxRollIn)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRollIn)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRollIn, function () {
+        scope.$watch(attributes.ngfxRollIn, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRollOut', [function () {
+  .directive('ngfxRollOut', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-rollout-start animated rollOut'
-          , fx = function () {
-            if (s.$eval(a.ngfxRollOut)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxRollOut)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxRollOut, function () {
+        scope.$watch(attributes.ngfxRollOut, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomIn', [function () {
+  .directive('ngfxZoomIn', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-zoomin-start animated zoomIn'
-          , fx = function () {
-            if (s.$eval(a.ngfxZoomIn)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxZoomIn)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxZoomIn, function () {
+        scope.$watch(attributes.ngfxZoomIn, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomInDown', [function () {
+  .directive('ngfxZoomInDown', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-zoomindown-start animated zoomInDown'
-          , fx = function () {
-            if (s.$eval(a.ngfxZoomInDown)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxZoomInDown)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxZoomInDown, function () {
+        scope.$watch(attributes.ngfxZoomInDown, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomInLeft', [function () {
+  .directive('ngfxZoomInLeft', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-zoominleft-start animated zoomInLeft'
-          , fx = function () {
-            if (s.$eval(a.ngfxZoomInLeft)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxZoomInLeft)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxZoomInLeft, function () {
+        scope.$watch(attributes.ngfxZoomInLeft, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomInRight', [function () {
+  .directive('ngfxZoomInRight', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-zoominright-start animated zoomInRight'
-          , fx = function () {
-            if (s.$eval(a.ngfxZoomInRight)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxZoomInRight)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxZoomInRight, function () {
+        scope.$watch(attributes.ngfxZoomInRight, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomInUp', [function () {
+  .directive('ngfxZoomInUp', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-zoominup-start animated zoomInUp'
-          , fx = function () {
-            if (s.$eval(a.ngfxZoomInUp)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxZoomInUp)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxZoomInUp, function () {
+        scope.$watch(attributes.ngfxZoomInUp, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomOut', [function () {
+  .directive('ngfxZoomOut', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-zoomout-start animated zoomOut'
-          , fx = function () {
-            if (s.$eval(a.ngfxZoomOut)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxZoomOut)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxZoomOut, function () {
+        scope.$watch(attributes.ngfxZoomOut, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomOutDown', [function () {
+  .directive('ngfxZoomOutDown', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-zoomoutdown-start animated zoomOutDown'
-          , fx = function () {
-            if (s.$eval(a.ngfxZoomOutDown)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxZoomOutDown)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxZoomOutDown, function () {
+        scope.$watch(attributes.ngfxZoomOutDown, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomOutLeft', [function () {
+  .directive('ngfxZoomOutLeft', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-zoomoutleft-start animated zoomOutLeft'
-          , fx = function () {
-            if (s.$eval(a.ngfxZoomOutLeft)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxZoomOutLeft)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxZoomOutLeft, function () {
+        scope.$watch(attributes.ngfxZoomOutLeft, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomOutRight', [function () {
+  .directive('ngfxZoomOutRight', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-zoomoutright-start animated zoomOutRight'
-          , fx = function () {
-            if (s.$eval(a.ngfxZoomOutRight)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxZoomOutRight)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxZoomOutRight, function () {
+        scope.$watch(attributes.ngfxZoomOutRight, function watctherFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomOutUp', [function () {
+  .directive('ngfxZoomOutUp', [function directiveFunction() {
     return {
       'restrict': 'A',
-      'link': function (s, e, a) {
+      'link': function linkingFunction(scope, element, attributes) {
 
         var c = 'ngfx-zoomoutup-start animated zoomOutUp'
-          , fx = function () {
-            if (s.$eval(a.ngfxZoomOutUp)) {
+          , fx = function fxFunction() {
+            if (scope.$eval(attributes.ngfxZoomOutUp)) {
 
-              e.removeClass('animated').addClass(c);
+              element.removeClass('animated').addClass(c);
             } else {
-              e.removeClass(c);
+              element.removeClass(c);
             }
           };
 
-        s.$watch(a.ngfxZoomOutUp, function () {
+        scope.$watch(attributes.ngfxZoomOutUp, function watctherFunction() {
           fx();
         });
       }

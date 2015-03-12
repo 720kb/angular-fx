@@ -26,9 +26,11 @@
 [ngfx-zoom-in-left],
 [ngfx-zoom-in-right],
 [ngfx-zoom-in-up],
-[ngfx-default=hide]{
+[ngfx-default=hide] {
+
   display:none;
 }
+
 [ngfx-bounce-in].ngfx-bouncein-start,
 [ngfx-bounce-in-down].ngfx-bounceindown-start,
 [ngfx-bounce-in-left].ngfx-bounceinleft-start,
@@ -57,17 +59,25 @@
 [ngfx-zoom-in-left].ngfx-zoomindown-start,
 [ngfx-zoom-in-right].ngfx-zoominright-start,
 [ngfx-zoom-in-up].ngfx-zoominup-start,
-[ngfx-default=show]{
+[ngfx-default=show] {
   display:inherit;
 }
+
 /*Speed*/
-.animated,[ngfx-speed=medium]{
+.animated,[ngfx-speed=medium] {
   -webkit-animation-duration: .75s;
-          animation-duration: .75s;
-}[ngfx-speed=slow]{
+  -moz-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+[ngfx-speed=slow] {
   -webkit-animation-duration: 1.25s;
-          animation-duration: 1.25s;
-}[ngfx-speed=fast]{
+  -moz-animation-duration: 1.25s;
+  animation-duration: 1.25s;
+}
+
+[ngfx-speed=fast] {
   -webkit-animation-duration: .45s;
-          animation-duration: .45s;
+  -moz-animation-duration: .45s;
+  animation-duration: .45s;
 }

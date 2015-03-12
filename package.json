@@ -1,30 +1,9 @@
 {
   "name": "angular-fx",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Angular CSS3 animation directives, conditional animations and effects for your elements.",
-  "homepage": "http://720kb.github.io/angular-fx",
-  "keywords": [
-    "angularjs",
-    "animations",
-    "effects",
-    "animate"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/720kb/angular-fx.git"
-  },
   "license": "MIT",
-  "devDependencies": {
-    "connect-modrewrite": "*",
-    "grunt": "*",
-    "grunt-concurrent": "*",
-    "grunt-contrib-connect": "*",
-    "grunt-contrib-csslint": "*",
-    "grunt-contrib-cssmin": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-eslint": "*"
-  },
+  "homepage": "http://720kb.github.io/angular-fx",
   "author": {
     "name": "Filippo Oretti",
     "email": "filippo.oretti@gmail.com",
@@ -36,5 +15,32 @@
       "email": "wouldgo84@gmail.com",
       "url": "https://github.com/wouldgo"
     }
-  ]
+  ],
+  "keywords": [
+    "angularjs",
+    "animations",
+    "effects",
+    "animate"
+  ],
+  "bugs": {
+    "url": "http://github.com/720kb/angular-fx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/720kb/angular-fx.git"
+  },
+  "dependencies": {
+    "animate.css": "^3.1.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-csslint": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-eslint": "^8.0.0",
+    "grunt-header": "^1.0.0"
+  }
 }

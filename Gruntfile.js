@@ -1,9 +1,11 @@
-/*global module, require*/
-(function setUp(module, require) {
+/*global module*/
+(function setUp(module) {
   'use strict';
 
   var banner = ['/*!',
       ' * Angular Fx v<%= pkg.version %>',
+      ' *',
+      ' * <%= pkg.description %>',
       ' *',
       ' * Released under the MIT license',
       ' * www.opensource.org/licenses/MIT',
@@ -11,8 +13,7 @@
       ' * Brought to you by 720kb.net',
       ' *',
       ' * <%= grunt.template.today("yyyy-mm-dd") %>',
-      ' */\n\n'].join('\n')
-    , modRewrite = require('connect-modrewrite');
+      ' */\n\n'].join('\n');
 
   module.exports = function doGrunt(grunt) {
 
@@ -47,29 +48,37 @@
       'uglify': {
         'options': {
           'sourceMap': true,
-          'sourceMapName': '<%= confs.dist %>/angular-fx.sourcemap.map',
           'preserveComments': false,
           'report': 'gzip',
           'banner': banner
         },
         'minifyTarget': {
           'files': {
-            '<%= confs.dist %>/angular-fx.min.js': [
-              '<%= confs.js %>/angular-fx.js'
+            '<%= confs.dist %>/<%= pkg.name %>.min.js': [
+              '<%= confs.js %>/<%= pkg.name %>.js'
             ]
           }
         }
       },
       'cssmin': {
         'options': {
-          'report': 'gzip',
-          'banner': banner
+          'report': 'gzip'
         },
         'minifyTarget': {
           'files': {
-            '<%= confs.dist %>/angular-fx.min.css': [
-              '<%= confs.css %>/angular-fx.css'
+            '<%= confs.dist %>/<%= pkg.name %>.min.css': [
+              '<%= confs.css %>/<%= pkg.name %>.css'
             ]
+          }
+        }
+      },
+      'header': {
+        'dist': {
+          'options': {
+            'text': banner
+          },
+          'files': {
+            '<%= confs.dist %>/<%= pkg.name %>.min.css': '<%= confs.dist %>/<%= pkg.name %>.min.css'
           }
         }
       },
@@ -78,27 +87,7 @@
           'options': {
             'port': '<%= confs.serverPort %>',
             'base': '.',
-            'keepalive': true,
-            'middleware': function manageMiddlewares(connect, options) {
-              var middlewares = []
-                , directory = options.directory || options.base[options.base.length - 1];
-
-              // enable Angular's HTML5 mode
-              middlewares.push(modRewrite(['!\\.html|\\.js|\\.svg|\\.css|\\.png|\\.gif$ /index.html [L]']));
-
-              if (!Array.isArray(options.base)) {
-                options.base = [options.base];
-              }
-              options.base.forEach(function forEachOption(base) {
-                // Serve static files.
-                middlewares.push(connect.static(base));
-              });
-
-              // Make directory browse-able.
-              middlewares.push(connect.directory(directory));
-
-              return middlewares;
-            }
+            'keepalive': true
           }
         }
       },
@@ -134,8 +123,10 @@
 
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-eslint');
+
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-header');
 
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-contrib-connect');
@@ -151,7 +142,8 @@
       'csslint',
       'eslint',
       'cssmin',
-      'uglify'
+      'uglify',
+      'header'
     ]);
   };
-}(module, require));
+}(module));
