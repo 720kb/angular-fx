@@ -35,10 +35,6 @@ select,select:active, select:focus, select:hover{
   background-color: royalblue;
 }
 /*Buttons*/
-a.btn,a.btn:hover{
-  cursor: default;
-  opacity:1;
-}
 .btn-default{
   max-width:160px;
   font-size: 13px;
