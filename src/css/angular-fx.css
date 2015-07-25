@@ -71,6 +71,7 @@
 /*Speed & Duration*/
 .animated.infinite, [ngfx-infinite] {
   -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .animated,[ngfx-speed=medium] {
