@@ -1,3 +1,14 @@
+/*25 july 2015*/
+ngfx-jello
+ngfx-slide-in-up
+ngfx-slide-in-left
+ngfx-slide-in-right
+ngfx-slide-in-down
+ngfx-slide-out-up
+ngfx-slide-out-left
+ngfx-slide-out-right
+ngfx-slide-out-down
+/*Before*/
 ngfx-bounce-in
 ngfx-bounce-in-down
 ngfx-bounce-in-left

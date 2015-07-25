@@ -26,6 +26,7 @@
 [ngfx-zoom-in-left],
 [ngfx-zoom-in-right],
 [ngfx-zoom-in-up],
+[ngfx-slide-in-up],
 [ngfx-default=hide] {
 
   display:none;
@@ -59,11 +60,19 @@
 [ngfx-zoom-in-left].ngfx-zoomindown-start,
 [ngfx-zoom-in-right].ngfx-zoominright-start,
 [ngfx-zoom-in-up].ngfx-zoominup-start,
+[ngfx-slide-in-up].ngfx-slideinup-start,
+[ngfx-slide-down-up].ngfx-slideindown-start,
+[ngfx-slide-left-up].ngfx-slideinleft-start,
+[ngfx-slide-right-up].ngfx-slideinright-start,
 [ngfx-default=show] {
   display:inherit;
 }
 
-/*Speed*/
+/*Speed & Duration*/
+.animated.infinite, [ngfx-infinite] {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 .animated,[ngfx-speed=medium] {
   -webkit-animation-duration: .75s;
   -moz-animation-duration: .75s;

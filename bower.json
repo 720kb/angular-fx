@@ -18,7 +18,7 @@
     "./dist/angular-fx.min.css"
   ],
   "dependencies": {
-    "animate.css": "^3.2.3"
+    "animate.css": "~3.3.0"
   },
   "homepage": "http://720kb.github.io/angular-fx",
   "ignore": [

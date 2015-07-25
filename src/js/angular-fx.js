@@ -3,7 +3,205 @@
   'use strict';
 
   angular.module('720kb.fx', [])
-  .directive('ngfxBounce', [function directiveFunction() {
+  .directive('ngfxSlideOutRight', [function ngfxFunction() {
+    return {
+      'restrict': 'A',
+      'link': function linkingFunction(scope, element, attributes) {
+
+        var c = 'ngfx-slideoutright-start animated slideOutRight'
+          , fx = function fxFunction() {
+
+            if (scope.$eval(attributes.ngfxSlideOutRight)) {
+
+              element.removeClass('animated').addClass(c);
+            } else {
+              element.removeClass(c);
+            }
+          };
+
+        scope.$watch(attributes.ngfxSlideOutRight, function watchFunction() {
+          fx();
+        });
+      }
+    };
+  }])
+  .directive('ngfxSlideOutLeft', [function ngfxFunction() {
+    return {
+      'restrict': 'A',
+      'link': function linkingFunction(scope, element, attributes) {
+
+        var c = 'ngfx-slideoutleft-start animated slideOutLeft'
+          , fx = function fxFunction() {
+
+            if (scope.$eval(attributes.ngfxSlideOutLeft)) {
+
+              element.removeClass('animated').addClass(c);
+            } else {
+              element.removeClass(c);
+            }
+          };
+
+        scope.$watch(attributes.ngfxSlideOutLeft, function watchFunction() {
+          fx();
+        });
+      }
+    };
+  }])
+  .directive('ngfxSlideOutDown', [function ngfxFunction() {
+    return {
+      'restrict': 'A',
+      'link': function linkingFunction(scope, element, attributes) {
+
+        var c = 'ngfx-slideoutdown-start animated slideOutDown'
+          , fx = function fxFunction() {
+
+            if (scope.$eval(attributes.ngfxSlideOutDown)) {
+
+              element.removeClass('animated').addClass(c);
+            } else {
+              element.removeClass(c);
+            }
+          };
+
+        scope.$watch(attributes.ngfxSlideOutDown, function watchFunction() {
+          fx();
+        });
+      }
+    };
+  }])
+  .directive('ngfxSlideOutUp', [function ngfxFunction() {
+    return {
+      'restrict': 'A',
+      'link': function linkingFunction(scope, element, attributes) {
+
+        var c = 'ngfx-slideoutup-start animated slideOutUp'
+          , fx = function fxFunction() {
+
+            if (scope.$eval(attributes.ngfxSlideOutUp)) {
+
+              element.removeClass('animated').addClass(c);
+            } else {
+              element.removeClass(c);
+            }
+          };
+
+        scope.$watch(attributes.ngfxSlideOutUp, function watchFunction() {
+          fx();
+        });
+      }
+    };
+  }])
+  .directive('ngfxSlideInUp', [function ngfxFunction() {
+    return {
+      'restrict': 'A',
+      'link': function linkingFunction(scope, element, attributes) {
+
+        var c = 'ngfx-slideinup-start animated slideInUp'
+          , fx = function fxFunction() {
+
+            if (scope.$eval(attributes.ngfxSlideInUp)) {
+
+              element.removeClass('animated').addClass(c);
+            } else {
+              element.removeClass(c);
+            }
+          };
+
+        scope.$watch(attributes.ngfxSlideInUp, function watchFunction() {
+          fx();
+        });
+      }
+    };
+  }])
+  .directive('ngfxSlideInDown', [function ngfxFunction() {
+    return {
+      'restrict': 'A',
+      'link': function linkingFunction(scope, element, attributes) {
+
+        var c = 'ngfx-slideindown-start animated slideInDown'
+          , fx = function fxFunction() {
+
+            if (scope.$eval(attributes.ngfxSlideInDown)) {
+
+              element.removeClass('animated').addClass(c);
+            } else {
+              element.removeClass(c);
+            }
+          };
+
+        scope.$watch(attributes.ngfxSlideInDown, function watchFunction() {
+          fx();
+        });
+      }
+    };
+  }])
+  .directive('ngfxSlideInLeft', [function ngfxFunction() {
+    return {
+      'restrict': 'A',
+      'link': function linkingFunction(scope, element, attributes) {
+
+        var c = 'ngfx-slideinleft-start animated slideInLeft'
+          , fx = function fxFunction() {
+
+            if (scope.$eval(attributes.ngfxSlideInLeft)) {
+
+              element.removeClass('animated').addClass(c);
+            } else {
+              element.removeClass(c);
+            }
+          };
+
+        scope.$watch(attributes.ngfxSlideInLeft, function watchFunction() {
+          fx();
+        });
+      }
+    };
+  }])
+  .directive('ngfxSlideInRight', [function ngfxFunction() {
+    return {
+      'restrict': 'A',
+      'link': function linkingFunction(scope, element, attributes) {
+
+        var c = 'ngfx-slideinright-start animated slideInRight'
+          , fx = function fxFunction() {
+
+            if (scope.$eval(attributes.ngfxSlideInRight)) {
+
+              element.removeClass('animated').addClass(c);
+            } else {
+              element.removeClass(c);
+            }
+          };
+
+        scope.$watch(attributes.ngfxSlideInRight, function watchFunction() {
+          fx();
+        });
+      }
+    };
+  }])
+  .directive('ngfxJello', [function ngfxFunction() {
+    return {
+      'restrict': 'A',
+      'link': function linkingFunction(scope, element, attributes) {
+
+        var c = 'ngfx-jello-start animated jello'
+          , fx = function fxFunction() {
+
+            if (scope.$eval(attributes.ngfxJello)) {
+
+              element.removeClass('animated').addClass(c);
+            } else {
+              element.removeClass(c);
+            }
+          };
+
+        scope.$watch(attributes.ngfxJello, function watchFunction() {
+          fx();
+        });
+      }
+    };
+  }])
+  .directive('ngfxBounce', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -19,13 +217,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxBounce, function watctherFunction() {
+        scope.$watch(attributes.ngfxBounce, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlash', [function directiveFunction() {
+  .directive('ngfxFlash', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -40,13 +238,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFlash, function watctherFunction() {
+        scope.$watch(attributes.ngfxFlash, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxPulse', [function directiveFunction() {
+  .directive('ngfxPulse', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -61,13 +259,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxPulse, function watctherFunction() {
+        scope.$watch(attributes.ngfxPulse, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRubberband', [function directiveFunction() {
+  .directive('ngfxRubberband', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -82,13 +280,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRubberband, function watctherFunction() {
+        scope.$watch(attributes.ngfxRubberband, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxShake', [function directiveFunction() {
+  .directive('ngfxShake', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -103,13 +301,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxShake, function watctherFunction() {
+        scope.$watch(attributes.ngfxShake, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxSwing', [function directiveFunction() {
+  .directive('ngfxSwing', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -124,13 +322,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxSwing, function watctherFunction() {
+        scope.$watch(attributes.ngfxSwing, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxTada', [function directiveFunction() {
+  .directive('ngfxTada', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -145,13 +343,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxTada, function watctherFunction() {
+        scope.$watch(attributes.ngfxTada, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxWobble', [function directiveFunction() {
+  .directive('ngfxWobble', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -166,13 +364,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxWobble, function watctherFunction() {
+        scope.$watch(attributes.ngfxWobble, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceIn', [function directiveFunction() {
+  .directive('ngfxBounceIn', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -187,13 +385,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxBounceIn, function watctherFunction() {
+        scope.$watch(attributes.ngfxBounceIn, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceInDown', [function directiveFunction() {
+  .directive('ngfxBounceInDown', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -208,13 +406,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxBounceInDown, function watctherFunction() {
+        scope.$watch(attributes.ngfxBounceInDown, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceInLeft', [function directiveFunction() {
+  .directive('ngfxBounceInLeft', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -229,13 +427,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxBounceInLeft, function watctherFunction() {
+        scope.$watch(attributes.ngfxBounceInLeft, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceInRight', [function directiveFunction() {
+  .directive('ngfxBounceInRight', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -250,13 +448,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxBounceInRight, function watctherFunction() {
+        scope.$watch(attributes.ngfxBounceInRight, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceInUp', [function directiveFunction() {
+  .directive('ngfxBounceInUp', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -271,13 +469,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxBounceInUp, function watctherFunction() {
+        scope.$watch(attributes.ngfxBounceInUp, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceOut', [function directiveFunction() {
+  .directive('ngfxBounceOut', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -292,13 +490,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxBounceOut, function watctherFunction() {
+        scope.$watch(attributes.ngfxBounceOut, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceOutDown', [function directiveFunction() {
+  .directive('ngfxBounceOutDown', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -313,13 +511,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxBounceOutDown, function watctherFunction() {
+        scope.$watch(attributes.ngfxBounceOutDown, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceOutLeft', [function directiveFunction() {
+  .directive('ngfxBounceOutLeft', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -334,13 +532,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxBounceOutLeft, function watctherFunction() {
+        scope.$watch(attributes.ngfxBounceOutLeft, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceOutRight', [function directiveFunction() {
+  .directive('ngfxBounceOutRight', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -355,13 +553,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxBounceOutRight, function watctherFunction() {
+        scope.$watch(attributes.ngfxBounceOutRight, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxBounceOutUp', [function directiveFunction() {
+  .directive('ngfxBounceOutUp', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -376,13 +574,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxBounceOutUp, function watctherFunction() {
+        scope.$watch(attributes.ngfxBounceOutUp, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeIn', [function directiveFunction() {
+  .directive('ngfxFadeIn', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -397,13 +595,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeIn, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeIn, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInDown', [function directiveFunction() {
+  .directive('ngfxFadeInDown', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -418,13 +616,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeInDown, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeInDown, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInDownBig', [function directiveFunction() {
+  .directive('ngfxFadeInDownBig', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -439,13 +637,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeInDownBig, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeInDownBig, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInLeft', [function directiveFunction() {
+  .directive('ngfxFadeInLeft', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -460,13 +658,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeInLeft, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeInLeft, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInLeftBig', [function directiveFunction() {
+  .directive('ngfxFadeInLeftBig', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -481,13 +679,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeInLeftBig, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeInLeftBig, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInRight', [function directiveFunction() {
+  .directive('ngfxFadeInRight', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -502,13 +700,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeInRight, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeInRight, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInRightBig', [function directiveFunction() {
+  .directive('ngfxFadeInRightBig', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -523,13 +721,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeInRightBig, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeInRightBig, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInUp', [function directiveFunction() {
+  .directive('ngfxFadeInUp', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -544,13 +742,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeInUp, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeInUp, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeInUpBig', [function directiveFunction() {
+  .directive('ngfxFadeInUpBig', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -565,13 +763,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeInUpBig, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeInUpBig, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOut', [function directiveFunction() {
+  .directive('ngfxFadeOut', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -586,13 +784,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeOut, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeOut, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutDown', [function directiveFunction() {
+  .directive('ngfxFadeOutDown', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -607,13 +805,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeOutDown, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeOutDown, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutDownBig', [function directiveFunction() {
+  .directive('ngfxFadeOutDownBig', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -628,13 +826,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeOutDownBig, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeOutDownBig, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutLeft', [function directiveFunction() {
+  .directive('ngfxFadeOutLeft', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -649,13 +847,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeOutLeft, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeOutLeft, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutLeftBig', [function directiveFunction() {
+  .directive('ngfxFadeOutLeftBig', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -670,13 +868,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeOutLeftBig, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeOutLeftBig, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutRight', [function directiveFunction() {
+  .directive('ngfxFadeOutRight', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -691,13 +889,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeOutRight, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeOutRight, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutRightBig', [function directiveFunction() {
+  .directive('ngfxFadeOutRightBig', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -712,13 +910,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeOutRightBig, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeOutRightBig, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutUp', [function directiveFunction() {
+  .directive('ngfxFadeOutUp', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -733,13 +931,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeOutUp, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeOutUp, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFadeOutUpBig', [function directiveFunction() {
+  .directive('ngfxFadeOutUpBig', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -754,13 +952,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFadeOutUpBig, function watctherFunction() {
+        scope.$watch(attributes.ngfxFadeOutUpBig, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlip', [function directiveFunction() {
+  .directive('ngfxFlip', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -775,13 +973,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFlip, function watctherFunction() {
+        scope.$watch(attributes.ngfxFlip, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlipInX', [function directiveFunction() {
+  .directive('ngfxFlipInX', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -796,13 +994,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFlipInX, function watctherFunction() {
+        scope.$watch(attributes.ngfxFlipInX, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlipInY', [function directiveFunction() {
+  .directive('ngfxFlipInY', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -817,13 +1015,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFlipInY, function watctherFunction() {
+        scope.$watch(attributes.ngfxFlipInY, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlipOutX', [function directiveFunction() {
+  .directive('ngfxFlipOutX', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -838,13 +1036,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFlipOutX, function watctherFunction() {
+        scope.$watch(attributes.ngfxFlipOutX, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxFlipOutY', [function directiveFunction() {
+  .directive('ngfxFlipOutY', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -859,13 +1057,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxFlipOutY, function watctherFunction() {
+        scope.$watch(attributes.ngfxFlipOutY, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxLightSpeedIn', [function directiveFunction() {
+  .directive('ngfxLightSpeedIn', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -880,13 +1078,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxLightSpeedIn, function watctherFunction() {
+        scope.$watch(attributes.ngfxLightSpeedIn, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxLightSpeedOut', [function directiveFunction() {
+  .directive('ngfxLightSpeedOut', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -901,13 +1099,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxLightSpeedOut, function watctherFunction() {
+        scope.$watch(attributes.ngfxLightSpeedOut, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateIn', [function directiveFunction() {
+  .directive('ngfxRotateIn', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -922,13 +1120,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRotateIn, function watctherFunction() {
+        scope.$watch(attributes.ngfxRotateIn, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateInUpLeft', [function directiveFunction() {
+  .directive('ngfxRotateInUpLeft', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -943,13 +1141,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRotateInUpLeft, function watctherFunction() {
+        scope.$watch(attributes.ngfxRotateInUpLeft, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateInUpRight', [function directiveFunction() {
+  .directive('ngfxRotateInUpRight', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -964,13 +1162,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRotateInUpRight, function watctherFunction() {
+        scope.$watch(attributes.ngfxRotateInUpRight, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateInDownLeft', [function directiveFunction() {
+  .directive('ngfxRotateInDownLeft', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -985,13 +1183,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRotateInDownLeft, function watctherFunction() {
+        scope.$watch(attributes.ngfxRotateInDownLeft, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateInDownRight', [function directiveFunction() {
+  .directive('ngfxRotateInDownRight', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1006,13 +1204,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRotateInDownRight, function watctherFunction() {
+        scope.$watch(attributes.ngfxRotateInDownRight, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateOut', [function directiveFunction() {
+  .directive('ngfxRotateOut', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1027,13 +1225,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRotateOut, function watctherFunction() {
+        scope.$watch(attributes.ngfxRotateOut, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateOutUpLeft', [function directiveFunction() {
+  .directive('ngfxRotateOutUpLeft', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1048,13 +1246,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRotateOutUpLeft, function watctherFunction() {
+        scope.$watch(attributes.ngfxRotateOutUpLeft, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateOutUpRight', [function directiveFunction() {
+  .directive('ngfxRotateOutUpRight', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1069,13 +1267,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRotateOutUpRight, function watctherFunction() {
+        scope.$watch(attributes.ngfxRotateOutUpRight, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateOutDownLeft', [function directiveFunction() {
+  .directive('ngfxRotateOutDownLeft', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1090,13 +1288,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRotateOutDownLeft, function watctherFunction() {
+        scope.$watch(attributes.ngfxRotateOutDownLeft, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRotateOutDownRight', [function directiveFunction() {
+  .directive('ngfxRotateOutDownRight', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1111,13 +1309,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRotateOutDownRight, function watctherFunction() {
+        scope.$watch(attributes.ngfxRotateOutDownRight, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxHinge', [function directiveFunction() {
+  .directive('ngfxHinge', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1132,13 +1330,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxHinge, function watctherFunction() {
+        scope.$watch(attributes.ngfxHinge, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRollIn', [function directiveFunction() {
+  .directive('ngfxRollIn', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1153,13 +1351,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRollIn, function watctherFunction() {
+        scope.$watch(attributes.ngfxRollIn, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxRollOut', [function directiveFunction() {
+  .directive('ngfxRollOut', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1174,13 +1372,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxRollOut, function watctherFunction() {
+        scope.$watch(attributes.ngfxRollOut, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomIn', [function directiveFunction() {
+  .directive('ngfxZoomIn', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1195,13 +1393,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxZoomIn, function watctherFunction() {
+        scope.$watch(attributes.ngfxZoomIn, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomInDown', [function directiveFunction() {
+  .directive('ngfxZoomInDown', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1216,13 +1414,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxZoomInDown, function watctherFunction() {
+        scope.$watch(attributes.ngfxZoomInDown, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomInLeft', [function directiveFunction() {
+  .directive('ngfxZoomInLeft', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1237,13 +1435,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxZoomInLeft, function watctherFunction() {
+        scope.$watch(attributes.ngfxZoomInLeft, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomInRight', [function directiveFunction() {
+  .directive('ngfxZoomInRight', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1258,13 +1456,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxZoomInRight, function watctherFunction() {
+        scope.$watch(attributes.ngfxZoomInRight, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomInUp', [function directiveFunction() {
+  .directive('ngfxZoomInUp', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1279,13 +1477,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxZoomInUp, function watctherFunction() {
+        scope.$watch(attributes.ngfxZoomInUp, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomOut', [function directiveFunction() {
+  .directive('ngfxZoomOut', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1300,13 +1498,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxZoomOut, function watctherFunction() {
+        scope.$watch(attributes.ngfxZoomOut, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomOutDown', [function directiveFunction() {
+  .directive('ngfxZoomOutDown', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1321,13 +1519,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxZoomOutDown, function watctherFunction() {
+        scope.$watch(attributes.ngfxZoomOutDown, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomOutLeft', [function directiveFunction() {
+  .directive('ngfxZoomOutLeft', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1342,13 +1540,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxZoomOutLeft, function watctherFunction() {
+        scope.$watch(attributes.ngfxZoomOutLeft, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomOutRight', [function directiveFunction() {
+  .directive('ngfxZoomOutRight', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1363,13 +1561,13 @@
             }
           };
 
-        scope.$watch(attributes.ngfxZoomOutRight, function watctherFunction() {
+        scope.$watch(attributes.ngfxZoomOutRight, function watchFunction() {
           fx();
         });
       }
     };
   }])
-  .directive('ngfxZoomOutUp', [function directiveFunction() {
+  .directive('ngfxZoomOutUp', [function ngfxFunction() {
     return {
       'restrict': 'A',
       'link': function linkingFunction(scope, element, attributes) {
@@ -1384,7 +1582,7 @@
             }
           };
 
-        scope.$watch(attributes.ngfxZoomOutUp, function watctherFunction() {
+        scope.$watch(attributes.ngfxZoomOutUp, function watchFunction() {
           fx();
         });
       }
