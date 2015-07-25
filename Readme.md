@@ -137,6 +137,24 @@ ngfx-tada
 
 ngfx-wobble
 
+ngfx-jello
+
+ngfx-slide-in-up
+
+ngfx-slide-in-left
+
+ngfx-slide-in-right
+
+ngfx-slide-in-down
+
+ngfx-slide-out-up
+
+ngfx-slide-out-left
+
+ngfx-slide-out-right
+
+ngfx-slide-out-down
+
 ngfx-bounce-in
 
 ngfx-bounce-in-down
@@ -273,10 +291,11 @@ If, for any reason, you would your element to be shown or hidden by default, you
 ```
 
 ####Infinite animations
-If for example you want an element to repeat the animation or effect while your condition/expression is true (sometimes needed), just add the `infinite` class to your element:
+If for example you want an element to repeat the animation or effect while your condition/expression is true (sometimes needed), just add the `ngfx-infinite` attribute to the element, or if your browser doesn't support css attributes use the `infinite`:
 
 ```html
 <a href="#" ngfx-pulse="3 > 2">Pulse one time</a>
+<a href="#" ngfx-pulse="3 > 2" ngfx-infinite>Pulse continuously</a>
 <a href="#" ngfx-pulse="3 > 2" class="infinite">Pulse continuously</a>
 ```
 
