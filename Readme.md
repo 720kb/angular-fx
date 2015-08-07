@@ -283,7 +283,7 @@ To set a different animation speed use the `ngfx-speed="medium | fast | slow"` a
 ```
 
 ####Element visibility
-If, for any reason, you would your element to be shown or hidden by default, you can use the `ngfx-default="hide | show"` attribute:
+If you would your element to be shown or hidden by default, you can use the `ngfx-default="hide | show"` attribute:
 
 ```html
 <a href="#" ngfx-pulse="3 > 2" ngfx-default="show">Shown by default</a>
