@@ -114,7 +114,7 @@ Use them like you do for `ng-if` or `ng-show` or `ng-hide`
 ```html
 <div ng-controller="myCtrl">
 <a href="#" ngfx-pulse="x > 2">Pulse</a>
-<a href="#" ngfx-fade-out="x > 2">Fadeout</a>
+<a href="#" ngfx-fade-out="{{myCondition}}">Fadeout</a>
 </div>
 ```
 
