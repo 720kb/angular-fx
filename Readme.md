@@ -273,8 +273,8 @@ ngfx-zoom-out-up
 
 ##Options
 
-####Animations speed
-To set a different animation speed just use the `ngfx-speed="medium | fast | slow"` attribute (default value, if not specified, is `medium`):
+####Animation speed
+To set a different animation speed use the `ngfx-speed="medium | fast | slow"` attribute (default value, if not specified, is `medium`):
 
 ```html
 <a href="#" ngfx-pulse="3 > 2" ngfx-speed="slow">Slow Pulse</a>
