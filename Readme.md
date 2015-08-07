@@ -291,7 +291,7 @@ If you would your element to be shown or hidden by default, you can use the `ngf
 ```
 
 ####Infinite animations
-If for example you want an element to repeat the animation or effect while your condition/expression is true (sometimes needed), just add the `ngfx-infinite` attribute to the element, or if your browser doesn't support css attributes use the `.infinite` class:
+If you want an element to repeat the animation or the effect while your condition/expression is true (sometimes needed), just add the `ngfx-infinite` attribute to the element, or, if your browser doesn't support css attributes, use the `.infinite` class:
 
 ```html
 <a href="#" ngfx-pulse="3 > 2">Pulse one time</a>
