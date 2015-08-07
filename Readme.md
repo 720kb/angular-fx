@@ -121,7 +121,7 @@ Use them like you do for `ng-if` or `ng-show` or `ng-hide`
 ###[live example](https://720kb.github.io/angular-fx)
 
 ##Complete list
-_for animations and effects examples, you can refer to the animate.css animations list [here](http://daneden.github.io/animate.css/)_
+_you can refer to the animate.css animations list [here](http://daneden.github.io/animate.css/)_
 
 ngfx-flash
 
