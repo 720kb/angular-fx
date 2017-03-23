@@ -4,7 +4,7 @@ Angular Fx
 [![Join the chat at https://gitter.im/720kb/angular-fx](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/720kb/angular-fx?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
-###Angular.js + animate.css
+### Angular.js + animate.css
 
 Conditional animations and effects for your elements: `ngfx-shake`, `ngfx-pulse`, `ngfx-tada`, and [more](https://github.com/720kb/angular-fx#complete-list) ...
 
@@ -14,7 +14,7 @@ It uses the awesome [animate.css](http://daneden.github.io/animate.css).
 
 The Angular Fx is developed by [720kb](http://720kb.net).
 
-##Requirements
+## Requirements
 
 
 [AngularJS](http://angularjs.org) v1.2+
@@ -22,7 +22,7 @@ The Angular Fx is developed by [720kb](http://720kb.net).
 [animate.css](http://daneden.github.io/animate.css)
 
 
-###Browser support
+### Browser support
 
 
 Chrome | Firefox | IE | Opera | Safari
@@ -49,9 +49,9 @@ To use the directive, include the Angular Fx javascript and css files in your we
 </html>
 ```
 
-##Install
+## Install
 
-###Bower installation
+### Bower
 
 ```
 $ bower install angular-fx --save
@@ -59,7 +59,7 @@ $ bower install angular-fx --save
 
 _then load the js files in your html_
 
-###Npm installation
+### npm
 
 ```
 $ npm install angular-fx --save
@@ -67,7 +67,7 @@ $ npm install angular-fx --save
 
 _then load the js files in your html_
 
-###Add module dependency
+### Add module dependency
 
 Add the 720kb.fx module dependency
 
@@ -112,9 +112,9 @@ Use them like you do for `ng-if` or `ng-show` or `ng-hide`
 </div>
 ```
 
-###[live example](https://720kb.github.io/angular-fx)
+### [live example](https://720kb.github.io/angular-fx)
 
-##Complete list
+## Complete list
 _you can refer to the animate.css animations list [here](http://daneden.github.io/animate.css/)_
 
 ngfx-flash
@@ -265,9 +265,9 @@ ngfx-zoom-out-right
 
 ngfx-zoom-out-up
 
-##Options
+## Options
 
-####Animation speed
+#### Animation speed
 To set a different animation speed use the `ngfx-speed="medium | fast | slow"` attribute (default value, if not specified, is `medium`):
 
 ```html
@@ -276,7 +276,7 @@ To set a different animation speed use the `ngfx-speed="medium | fast | slow"` a
 <a href="#" ngfx-pulse="3 > 2" ngfx-speed="fast">Fast Pulse</a>
 ```
 
-####Element visibility
+#### Element visibility
 If you would your element to be shown or hidden by default, you can use the `ngfx-default="hide | show"` attribute:
 
 ```html
@@ -284,7 +284,7 @@ If you would your element to be shown or hidden by default, you can use the `ngf
 <a href="#" ngfx-pulse="3 > 2" ngfx-default="hide">Hidden by default</a>
 ```
 
-####Infinite animations
+#### Infinite animations
 If you want an element to repeat the animation or the effect while your condition/expression is true (sometimes needed), just add the `ngfx-infinite` attribute to the element, or, if your browser doesn't support css attributes, use the `.infinite` class:
 
 ```html
@@ -293,7 +293,7 @@ If you want an element to repeat the animation or the effect while your conditio
 <a href="#" ngfx-pulse="3 > 2" class="infinite">Pulse continuously</a>
 ```
 
-##Contributing
+## Contributing
 
 We will be much grate if you help us making this project to grow up.
 Feel free to contribute by forking, opening issues, pull requests etc.
